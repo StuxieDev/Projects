@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 64" width="360" height="64">
+  <defs>
+    <linearGradient id="alg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0b429"/>
+      <stop offset="100%" stop-color="#3a8f8f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0b0b12"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" fill="none" stroke="url(#alg)" stroke-width="1.5" opacity="0.6"/>
+  <rect x="14" y="18" width="36" height="10" rx="3" fill="none" stroke="url(#alg)" stroke-width="3.5"/>
+  <path d="M17 28 L17 44 A4 4 0 0 0 21 48 L43 48 A4 4 0 0 0 47 44 L47 28" fill="none" stroke="url(#alg)" stroke-width="3.5" stroke-linejoin="round"/>
+  <line x1="27" y1="35" x2="37" y2="35" stroke="url(#alg)" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="80" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700" fill="#9ca3af">StuxieDev</text>
+  <text x="80" y="52" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="500" fill="#f0b429">Archives</text>
+</svg>
