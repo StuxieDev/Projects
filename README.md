@@ -4,9 +4,9 @@
 
 # StuxieDev Projects
 
-**An index of things built by [StuxieDev](https://github.com/StuxieDev) (Leo Ridgwell).**
+### *An index of things built by [StuxieDev](https://stuxie.dev) (Leo Ridgwell).*
 
-[StuxieDev Projects](https://portfolio.stuxie.dev) is a small, static, no-build-step website that links out to everything else — game mods, automation tools, and utilities, each with its own repository and its own site.
+[StuxieDev Projects](https://projects.stuxie.dev) is a small, static, no-build-step website that links out to everything else — game mods, automation tools, and utilities, each with its own repository and its own site.
 
 - Plain HTML, CSS, and JavaScript — no framework, no bundler, no dependencies to install
 - Deployed to [GitHub Pages](https://pages.github.com/) via `.github/workflows/pages.yml`
