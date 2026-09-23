@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found — StuxieDev Projects</title>
+  <meta name="description" content="Page not found — StuxieDev Projects">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/icon.svg">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/dev-mode.js"></script>
+  <style>
+    .not-found {
+      min-height: calc(100vh - 140px);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 3rem 1.5rem;
+    }
+    .not-found .code {
+      font-weight: 800; font-size: clamp(3.5rem, 12vw, 6rem); line-height: 1;
+      background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+      margin-bottom: 0.5rem;
+    }
+    .not-found h1 { font-size: clamp(1.3rem, 4vw, 1.7rem); margin: 0 0 0.75rem; }
+    .not-found p { color: var(--text-muted); max-width: 420px; margin: 0 0 1.75rem; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="brand">
+        <img src="/assets/img/icon.svg" alt="">
+        StuxieDev <span class="brand-sub">Projects</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#projects">Projects</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+        <a href="/legal/">Legal</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="not-found">
+    <div class="code">404</div>
+    <h1>Page not found</h1>
+    <p>Whatever you were looking for isn't here &mdash; the link might be old, or the page might have moved.</p>
+    <a class="btn btn-primary" href="/">&larr; Back to StuxieDev Projects</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>&copy; <span data-year></span> Leo Ridgwell (StuxieDev). All rights reserved.</div>
+      <div class="footer-links">
+        <a href="/legal/">Boring Legal Stuff</a>
+        <a href="https://github.com/StuxieDev/Projects" target="_blank" rel="noopener">Source</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
