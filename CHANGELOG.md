@@ -4,6 +4,11 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.1.2
+
+### Added
+- `404.html`: a custom not-found page matching the site's header/footer and dark purple/cyan theme, instead of GitHub Pages' default error page.
+
 ## v0.1.1
 
 ### Fixed
