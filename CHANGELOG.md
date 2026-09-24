@@ -4,6 +4,11 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.3.2
+
+### Fixed
+- `assets/img/logo.svg` had a large empty gap on the right: the canvas was 360 units wide, but the text ends at about 197. It's now trimmed to 206, leaving a small margin in Segoe UI or Arial. The README and CONTRIBUTING headers now show it at 172px wide instead of 300px, so it appears the same size as before.
+
 ## v0.3.1
 
 ### Changed

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/img/logo.svg" width="300" alt="StuxieDev Projects">
+  <img src="assets/img/logo.svg" width="172" alt="StuxieDev Projects">
 </p>
 
 # StuxieDev Projects
