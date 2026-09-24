@@ -4,7 +4,7 @@
 
 # StuxieDev Projects
 
-### *An index of things built by [StuxieDev](https://stuxie.dev) (Leo Ridgwell).*
+### *An index of things built by [StuxieDev](https://stuxie.dev).*
 
 [StuxieDev Projects](https://projects.stuxie.dev) is a small, static, no-build-step website that links out to everything else — game mods, automation tools, and utilities, each with its own repository and its own site.
 
@@ -22,6 +22,11 @@
 | TIGHC | The Intiface Game Haptics Controller | [tighc.stuxie.dev](https://tighc.stuxie.dev) | [TIGHC/Engine](https://github.com/TIGHC/Engine) |
 | TS4RLS | The Sims 4 Random Loading Screen | [ts4rls.stuxie.dev](https://ts4rls.stuxie.dev) | [TS4RLS/Engine](https://github.com/TS4RLS/Engine) |
 | TWRAR | The Website Recorder And Replayer | [twrar.stuxie.dev](https://twrar.stuxie.dev) | [TWRAR/Engine](https://github.com/TWRAR/Engine) |
+| Fix Blank Steam Icons | Restores blank Steam shortcut icons from Steam's CDN | — | [StuxieDev/Fix-Blank-Steam-Icons](https://github.com/StuxieDev/Fix-Blank-Steam-Icons) |
+| PokeFusion | Pokémon Infinite Fusion playground | [pokefusion.stuxie.dev](https://pokefusion.stuxie.dev) | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
+| StuxCogs | Cogs for Red-DiscordBot | — | [StuxieDev/StuxCogs](https://github.com/StuxieDev/StuxCogs) |
+| git-scripts | Bash helpers for rewriting Git history | — | [StuxieDev/git-scripts](https://github.com/StuxieDev/git-scripts) |
+| CU Classification Calculator | Coventry University degree classification calculator | — | [StuxieDev/coventry-university-classification-calculator](https://github.com/StuxieDev/coventry-university-classification-calculator) |
 
 This table (and the matching cards on the site) is the source of truth for what's featured — update both together when a project is added, retired, or renamed.
 
@@ -44,4 +49,4 @@ On Windows, use `dev-server.bat` instead. No `npm install` needed — the dev se
 
 ## License
 
-&copy; Leo Ridgwell (StuxieDev). All rights reserved. This repository is not licensed for reuse or redistribution.
+&copy; StuxieDev. All rights reserved. This repository is not licensed for reuse or redistribution.

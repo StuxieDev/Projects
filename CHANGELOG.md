@@ -4,6 +4,20 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.2.0
+
+### Added
+- New projects on the index: Fix Blank Steam Icons and PokeFusion (featured), plus a "Scripts & smaller bits" section with StuxCogs, git-scripts, and the CU Classification Calculator — each with its own icon tile in `assets/img/projects/`.
+- Hero stats row, a contact card, and a `theme-color` meta tag on every page.
+
+### Changed
+- The site is now credited to "StuxieDev" alone, without "Leo Ridgwell": hero eyebrow, meta description, every footer copyright line, the disclaimer page, and `README.md`.
+- Restyled the site in the purple/pink theme used by stuxie.dev (`#9b4f96` / `#d60270`), with Poppins headings and Lato body text. The old purple/cyan colours in `icon.svg` and `logo.svg` were updated to match.
+- Project icons now use separate square `-icon` files (`tighc-icon.png`, `ts4rls-icon.png`, `twrar-icon.png`, `archives-icon.svg`), and the wide logos are kept as `-logo` files.
+
+### Fixed
+- Project icons were being stretched and squashed. Icons now sit in a fixed square box with `object-fit: contain` and explicit width/height. Icons with a transparent background (TIGHC) get a backing tile.
+
 ## v0.1.2
 
 ### Added
