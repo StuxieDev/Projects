@@ -4,6 +4,11 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.2.2
+
+### Changed
+- PokeFusion's badge changed from "Discontinued" to "Archived", and its note now says the repository is archived on GitHub and read-only. The README entry says the same.
+
 ## v0.2.1
 
 ### Added

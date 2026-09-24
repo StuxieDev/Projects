@@ -30,7 +30,7 @@ No install step — there's no `package.json`, no dependencies, nothing to build
 1. Add/update the entry in the README's project table
 2. Add/update the matching `<article class="project-card">` block in `index.html`
 3. Drop a logo/icon into `assets/img/projects/` if the project doesn't already have a suitable square icon there
-4. When a project is discontinued, move its card into the "Discontinued" section: add the `discontinued` class, swap the status badge for `<span class="badge-status archived">Discontinued</span>`, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
+4. When a project is discontinued, move its card into the "Discontinued" section: add the `discontinued` class, swap the status badge for `<span class="badge-status archived">Discontinued</span>` (or `Archived` once the repo is archived on GitHub), drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 
 ## Legal pages
 

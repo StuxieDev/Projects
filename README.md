@@ -23,7 +23,7 @@
 | TS4RLS | The Sims 4 Random Loading Screen | [ts4rls.stuxie.dev](https://ts4rls.stuxie.dev) | [TS4RLS/Engine](https://github.com/TS4RLS/Engine) |
 | TWRAR | The Website Recorder And Replayer | [twrar.stuxie.dev](https://twrar.stuxie.dev) | [TWRAR/Engine](https://github.com/TWRAR/Engine) |
 | Fix Blank Steam Icons | Restores blank Steam shortcut icons from Steam's CDN | — | [StuxieDev/Fix-Blank-Steam-Icons](https://github.com/StuxieDev/Fix-Blank-Steam-Icons) |
-| PokeFusion | Pokémon Infinite Fusion playground (discontinued — upstream sprite assets were taken down) | — | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
+| PokeFusion | Pokémon Infinite Fusion playground (discontinued and archived; its upstream sprite assets were taken down) | — | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
 | StuxCogs | Cogs for Red-DiscordBot | — | [StuxieDev/StuxCogs](https://github.com/StuxieDev/StuxCogs) |
 | git-scripts | Bash helpers for rewriting Git history | — | [StuxieDev/git-scripts](https://github.com/StuxieDev/git-scripts) |
 | CU Classification Calculator | Coventry University degree classification calculator | — | [StuxieDev/coventry-university-classification-calculator](https://github.com/StuxieDev/coventry-university-classification-calculator) |
