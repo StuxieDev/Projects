@@ -18,6 +18,9 @@
 
 | Project | What it is | Site | Repo |
 |---|---|---|---|
+| StuxieDev Website | StuxieDev's home: portfolio, work history, and links to everything else | [stuxie.dev](https://stuxie.dev) | — |
+| RoboStux | All-in-one Discord bot: moderation, utilities, fun, and automation | [robo.st](https://robo.st) | [RoboStux](https://github.com/RoboStux) (org) |
+| Sm.lol | All-in-one linking service: short links, bio pages, QR codes | [sm.lol](https://sm.lol) | — |
 | StuxieDev Archives | Archive of retired StuxieDev projects | [archives.stuxie.dev](https://archives.stuxie.dev) | [StuxieDev/Archives](https://github.com/StuxieDev/Archives) |
 | TIGHC | The Intiface Game Haptics Controller | [tighc.stuxie.dev](https://tighc.stuxie.dev) | [TIGHC/Engine](https://github.com/TIGHC/Engine) |
 | TS4RLS | The Sims 4 Random Loading Screen | [ts4rls.stuxie.dev](https://ts4rls.stuxie.dev) | [TS4RLS/Engine](https://github.com/TS4RLS/Engine) |

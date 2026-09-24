@@ -4,6 +4,17 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.3.0
+
+### Added
+- A Featured section of flagship projects: the StuxieDev Website (stuxie.dev), RoboStux, and Sm.lol. Their icons (`stuxiedev-icon.png`, `robostux-icon.png`, `smlol-icon.png`) come from each project's own site, and all three are in the README project table.
+
+### Changed
+- StuxieDev Archives, TIGHC, TS4RLS, and TWRAR moved out of Featured into a new "More projects" section.
+- Featured cards get a larger icon and an accent border. More projects shows two cards per row.
+- Fix Blank Steam Icons moved from Featured to "Scripts & smaller bits", since it's a set of scripts rather than an app. Like the other script cards, it has no status badge, and the section now fits four compact cards per row on desktop.
+- Hero project count updated from 9 to 12.
+
 ## v0.2.2
 
 ### Changed

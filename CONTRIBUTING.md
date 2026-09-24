@@ -27,6 +27,13 @@ No install step — there's no `package.json`, no dependencies, nothing to build
 
 ## Adding or retiring a project card
 
+The projects list has four sections, in this order:
+
+- **Featured**: the flagship projects (currently the StuxieDev Website, RoboStux, and Sm.lol)
+- **More projects**: other apps, mods, and sites with their own home
+- **Scripts & smaller bits**: scripts, bot cogs, and small utilities, shown as compact cards (44px icons)
+- **Discontinued**: retired projects (see step 4)
+
 1. Add/update the entry in the README's project table
 2. Add/update the matching `<article class="project-card">` block in `index.html`
 3. Drop a logo/icon into `assets/img/projects/` if the project doesn't already have a suitable square icon there
