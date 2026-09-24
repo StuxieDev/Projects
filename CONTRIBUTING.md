@@ -6,7 +6,7 @@
 
 This is a personal project — the repository isn't open to public pull requests, and per the [License](README.md#license) section it isn't licensed for redistribution or reuse. This document exists for future-me (or anyone with write access) working on it consistently.
 
-Questions: [contact@stuxie.dev](mailto:contact@stuxie.dev).
+Questions: [hello@stuxie.dev](mailto:hello@stuxie.dev).
 
 ## Local setup
 
@@ -30,6 +30,7 @@ No install step — there's no `package.json`, no dependencies, nothing to build
 1. Add/update the entry in the README's project table
 2. Add/update the matching `<article class="project-card">` block in `index.html`
 3. Drop a logo/icon into `assets/img/projects/` if the project doesn't already have a suitable square icon there
+4. When a project is discontinued, move its card into the "Discontinued" section: add the `discontinued` class, swap the status badge for `<span class="badge-status archived">Discontinued</span>`, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 
 ## Legal pages
 

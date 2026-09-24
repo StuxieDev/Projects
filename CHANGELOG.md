@@ -4,6 +4,22 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.2.1
+
+### Added
+- A "Discontinued" section at the end of the projects list. Its cards are dimmed, with a dashed border and a short note on why the project ended.
+
+### Fixed
+- The contact address was `contact@stuxie.dev`. The home page contact button and `CONTRIBUTING.md` now use `hello@stuxie.dev`, and the legal hub and all six legal pages use `legal@stuxie.dev`.
+- The v0.2.0 restyle loaded Poppins and Lato from Google Fonts, which contradicted the Cookies Policy's "no third-party fonts" statement. Both fonts are now self-hosted in `assets/fonts/` (latin subset, SIL Open Font License), so the site makes no third-party requests again.
+- The legal hub's "Questions about any of this?" link used `--accent-2`, a colour variable the v0.2.0 restyle removed. It now uses `--accent-bright`.
+- The StuxieDev Archives icon and logo (`archives-icon.svg`, `archives-logo.svg`) were gold and teal. They now use the StuxieDev Archives colours: a purple-to-pink gradient (`#9b4f96`/`#d60270`) on dark plum `#170b1c`, matching `themes.php` in the Archives repo.
+
+### Changed
+- Footer copyright lines now show a year range starting from the repo's first commit (2026), in the same style as the Archives site: "© 2026 StuxieDev" for now, "© 2026–2027 StuxieDev" from next year. The start year is set with `data-year-start` and rendered by `assets/js/main.js`.
+- StuxieDev Archives status changed from "Building" to "Live".
+- PokeFusion moved from Featured to the new Discontinued section, and its Website link is removed. The upstream repo that hosted its sprite assets was taken down, so the site no longer works. The card and README entry say why.
+
 ## v0.2.0
 
 ### Added
