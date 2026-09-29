@@ -4,6 +4,15 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.6.0
+
+### Added
+- The StuxieDev icon beside the copyright line in the footer of every page.
+
+### Changed
+- StuxCogs is discontinued: it moved to the Discontinued section, and its repository is archived on GitHub.
+- Archived projects show an "Archived in MM/YYYY" badge before their description, on the site and in the README's project table.
+
 ## v0.5.0
 
 ### Added

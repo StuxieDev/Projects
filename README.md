@@ -29,8 +29,8 @@
 | Trakt | Jellyfin plugin: sync watch history with trakt.tv and scrobble playback | — | [StuxieDev/TraktPlugin](https://github.com/StuxieDev/TraktPlugin) |
 | AnimeThemes | Jellyfin plugin: anime openings and endings from animethemes.moe as theme songs and videos | — | [StuxieDev/AnimeThemesPlugin](https://github.com/StuxieDev/AnimeThemesPlugin) |
 | Fix Blank Steam Icons | Restores blank Steam shortcut icons from Steam's CDN | — | [StuxieDev/Fix-Blank-Steam-Icons](https://github.com/StuxieDev/Fix-Blank-Steam-Icons) |
-| PokeFusion | Pokémon Infinite Fusion playground (discontinued and archived; its upstream sprite assets were taken down) | — | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
-| StuxCogs | Cogs for Red-DiscordBot | — | [StuxieDev/StuxCogs](https://github.com/StuxieDev/StuxCogs) |
+| PokeFusion | **Archived in 09/2026.** Pokémon Infinite Fusion playground, discontinued because its upstream sprite assets were taken down | — | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
+| StuxCogs | **Archived in 09/2026.** Cogs for Red-DiscordBot, discontinued and no longer maintained | — | [StuxieDev/StuxCogs](https://github.com/StuxieDev/StuxCogs) |
 | git-scripts | Bash helpers for rewriting Git history | — | [StuxieDev/git-scripts](https://github.com/StuxieDev/git-scripts) |
 | CU Classification Calculator | Coventry University degree classification calculator | — | [StuxieDev/coventry-university-classification-calculator](https://github.com/StuxieDev/coventry-university-classification-calculator) |
 
