@@ -25,6 +25,9 @@
 | TIGHC | The Intiface Game Haptics Controller | [tighc.stuxie.dev](https://tighc.stuxie.dev) | [TIGHC/Engine](https://github.com/TIGHC/Engine) |
 | TS4RLS | The Sims 4 Random Loading Screen | [ts4rls.stuxie.dev](https://ts4rls.stuxie.dev) | [TS4RLS/Engine](https://github.com/TS4RLS/Engine) |
 | TWRAR | The Website Recorder And Replayer | [twrar.stuxie.dev](https://twrar.stuxie.dev) | [TWRAR/Engine](https://github.com/TWRAR/Engine) |
+| YouTubeSync | Jellyfin plugin: YouTube channels and playlists as shows, streamed on demand via yt-dlp | — | [StuxieDev/YouTubeSyncPlugin](https://github.com/StuxieDev/YouTubeSyncPlugin) |
+| Trakt | Jellyfin plugin: sync watch history with trakt.tv and scrobble playback | — | [StuxieDev/TraktPlugin](https://github.com/StuxieDev/TraktPlugin) |
+| AnimeThemes | Jellyfin plugin: anime openings and endings from animethemes.moe as theme songs and videos | — | [StuxieDev/AnimeThemesPlugin](https://github.com/StuxieDev/AnimeThemesPlugin) |
 | Fix Blank Steam Icons | Restores blank Steam shortcut icons from Steam's CDN | — | [StuxieDev/Fix-Blank-Steam-Icons](https://github.com/StuxieDev/Fix-Blank-Steam-Icons) |
 | PokeFusion | Pokémon Infinite Fusion playground (discontinued and archived; its upstream sprite assets were taken down) | — | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
 | StuxCogs | Cogs for Red-DiscordBot | — | [StuxieDev/StuxCogs](https://github.com/StuxieDev/StuxCogs) |
