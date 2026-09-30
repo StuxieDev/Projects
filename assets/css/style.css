@@ -105,26 +105,22 @@ a { color: inherit; text-decoration: none; }
   padding: 0 20px;
 }
 
-/* Dev-mode banner */
-#dev-banner {
-  background: #3a2b00;
-  color: #ffd88a;
-  font-size: 0.82rem;
-  text-align: center;
-  padding: 6px 12px;
-  border-bottom: 1px solid #5c4400;
+/* Site banners (site-banner.css) and footer brand block (brand-footer.css), mapped to
+   the site's colours. The sticky header moves down by the banners' height. Dark-only. */
+.site-banners {
+  --banner-page-bg: var(--bg);
+  --banner-text: var(--text);
+  --banner-site: var(--accent-bright);
+  --banner-site-light: var(--accent);
 }
-#dev-banner code {
-  font-family: var(--font-mono);
-  background: rgba(0, 0, 0, 0.25);
-  padding: 1px 5px;
-  border-radius: 4px;
-}
+.site-footer .container.footer-stux { flex-direction: column; justify-content: center; margin-top: 18px; gap: 0; }
+.brand-footer { --text-muted: var(--text-muted); --accent: var(--accent-bright); }
+.copyright-glyph { vertical-align: -1px; }
 
 /* Header */
 .site-header {
   position: sticky;
-  top: 0;
+  top: var(--banner-h, 0px);
   z-index: 20;
   background: rgba(15, 13, 18, 0.8);
   backdrop-filter: blur(12px);

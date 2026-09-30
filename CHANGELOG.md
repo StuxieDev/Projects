@@ -4,6 +4,16 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v0.7.0
+
+### Added
+- A footer brand block on every page: the StuxieDev logo and "A StuxieDev Project" (linking to projects.stuxie.dev), grey and dimmed until hovered or focused, and a "Created with love / code / coffee by StuxieDev" line. There's no Powered by Stuxedo badge, because the site is served by GitHub Pages
+- In dev mode, `?banner=soon,maintenance,site` previews the other banner variants; production never shows them
+
+### Changed
+- The dev-mode strip is now the shared Stux site banner (`assets/css/site-banner.css` + `assets/js/site-banner.js`): a muted tint with a faint icon pattern and a label chip, above the sticky header, which moves down by the banner's height so nothing is covered
+- The footer's copyright sign is an inline copyright glyph (read as "Copyright" by screen readers)
+
 ## v0.6.1
 
 ### Changed
