@@ -4,6 +4,16 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.3
+
+### Fixed
+
+- Card icons no longer sit in a bordered tile (2 icons)
+
+### Removed
+
+- The `.project-icon.on-tile` style, so icons can't be put in the bordered tile again
+
 ## v1.4.2
 
 ### Fixed

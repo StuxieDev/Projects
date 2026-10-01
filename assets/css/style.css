@@ -330,12 +330,6 @@ a { color: inherit; text-decoration: none; }
   border-radius: 14px;
 }
 /* For icons drawn on a transparent background (no tile of their own). */
-.project-icon.on-tile {
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  padding: 6px;
-}
-
 .project-card h3 { margin: 0; font-size: 1.12rem; font-weight: 600; line-height: 1.3; }
 .project-card .owner { font-size: 0.72rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 2px; }
 .project-card .owner a { color: inherit; text-decoration: none; }
