@@ -4,6 +4,11 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.1
+
+### Changed
+- The Sm.lol card now presents Sm.lol as "A Stux.Dev Service" (linking to services.stux.dev) rather than a personal StuxieDev project; its live badge is unchanged
+
 ## v1.4.0
 
 ### Added
