@@ -59,7 +59,7 @@
       <h3 class="subhead">Featured</h3>
       <div class="project-grid">
 
-        <article class="project-card featured">
+        <article data-monitor="stuxiedev" class="project-card featured">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/stuxiedev-icon.png" width="64" height="64" alt="StuxieDev Website icon" loading="lazy">
             <div>
@@ -67,7 +67,7 @@
               <div class="project-tagline">Websites, Games &amp; Apps, Always Developing!</div>
             </div>
           </div>
-          <span class="badge-status live">Live</span>
+          <span class="badge-status live" hidden></span>
           <p class="desc">The home of StuxieDev: portfolio, work and education history, and links out to everything else &mdash; websites, games, apps, and the projects on this page.</p>
           <div class="stack">
             <span class="pill">WordPress</span>
@@ -78,7 +78,7 @@
           </div>
         </article>
 
-        <article class="project-card featured">
+        <article data-monitor="robostux" class="project-card featured">
           <div class="project-top">
             <img class="project-icon on-tile" src="/assets/img/projects/robostux-icon.png" width="64" height="64" alt="RoboStux icon" loading="lazy">
             <div>
@@ -86,7 +86,7 @@
               <div class="project-tagline">One Bot, Multiple Features, Every Server!</div>
             </div>
           </div>
-          <span class="badge-status live">Live</span>
+          <span class="badge-status live" hidden></span>
           <p class="desc">A Discord bot that bundles moderation, utilities, fun, and automation into one &mdash; so a server needs one bot instead of five.</p>
           <div class="stack">
             <span class="pill">Python</span>
@@ -106,7 +106,7 @@
               <div class="project-tagline">The all-in-one linking service that&rsquo;s so smlol</div>
             </div>
           </div>
-          <span class="badge-status live">Live</span>
+          
           <p class="desc">Short links, bio pages, QR codes, vCard links, and file links in one simple service, with proper analytics for your visitors.</p>
           <div class="stack">
             <span class="pill">Web app</span>
@@ -122,7 +122,7 @@
       <h3 class="subhead">More projects</h3>
       <div class="project-grid two-up">
 
-        <article class="project-card">
+        <article data-monitor="archives-stuxie-dev" class="project-card">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/archives-icon.svg" width="56" height="56" alt="StuxieDev Archives icon" loading="lazy">
             <div>
@@ -130,7 +130,7 @@
               <div class="project-tagline">&ldquo;The internet forgets. We don&rsquo;t.&rdquo;</div>
             </div>
           </div>
-          <span class="badge-status live">Live</span>
+          <span class="badge-status live" hidden></span>
           <p class="desc">An archive of retired StuxieDev projects &mdash; snapshots, source, and stories for sites and tools that are no longer live, so nothing gets erased just because it shut down.</p>
           <div class="stack">
             <span class="pill">PHP</span>
@@ -141,7 +141,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article data-monitor="tighc" class="project-card">
           <div class="project-top">
             <img class="project-icon on-tile" src="/assets/img/projects/tighc-icon.png" width="56" height="56" alt="TIGHC icon" loading="lazy">
             <div>
@@ -149,7 +149,7 @@
               <div class="project-tagline">The Intiface Game Haptics Controller</div>
             </div>
           </div>
-          <span class="badge-status live">Live</span>
+          <span class="badge-status live" hidden></span>
           <p class="desc">Links keyboard and mouse input to a Buttplug/Intiface-compatible haptic device &mdash; every in-game action can drive its own motor at its own intensity, per game. 18+.</p>
           <div class="stack">
             <span class="pill">Python</span>
@@ -161,7 +161,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article data-monitor="ts4rls" class="project-card">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/ts4rls-icon.png" width="56" height="56" alt="TS4RLS icon" loading="lazy">
             <div>
@@ -169,7 +169,7 @@
               <div class="project-tagline">The Sims 4 Random Loading Screen</div>
             </div>
           </div>
-          <span class="badge-status live">Live</span>
+          <span class="badge-status live" hidden></span>
           <p class="desc">Automatically swaps in a random image from your own folder as your Sims 4 loading screen mod &mdash; set it once, get a fresh screen on every launch.</p>
           <div class="stack">
             <span class="pill">Python</span>
@@ -181,7 +181,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article data-monitor="twrar" class="project-card">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/twrar-icon.png" width="56" height="56" alt="TWRAR icon" loading="lazy">
             <div>
@@ -189,7 +189,7 @@
               <div class="project-tagline">The Website Recorder And Replayer</div>
             </div>
           </div>
-          <span class="badge-status live">Live</span>
+          <span class="badge-status live" hidden></span>
           <p class="desc">Desktop GUI that records clicks, form input, and navigation into a launchable YAML step profile &mdash; replay it anytime to QA/regression-test or scrape your own sites.</p>
           <div class="stack">
             <span class="pill">Python</span>
@@ -326,7 +326,7 @@
       <h3 class="subhead">Discontinued</h3>
       <div class="project-grid compact">
 
-        <article class="project-card discontinued">
+        <article data-state="discontinued" class="project-card discontinued">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/stuxcogs.svg" width="44" height="44" alt="StuxCogs icon" loading="lazy">
             <div>
@@ -334,7 +334,7 @@
               <div class="project-tagline">Cogs for Red-DiscordBot</div>
             </div>
           </div>
-          <span class="badge-status archived">Archived in 09/2026</span>
+          <span class="badge-status discontinued"><i class="badge-ico" aria-hidden="true"></i>Discontinued</span>
           <p class="desc">Fun badges, random statuses, server stats, role utilities and role persistence for Red V3 bots.</p>
           <p class="discontinued-note">Discontinued and no longer maintained. The repository is archived on GitHub and read-only.</p>
           <div class="stack">
@@ -346,7 +346,7 @@
           </div>
         </article>
 
-        <article class="project-card discontinued">
+        <article data-state="discontinued" class="project-card discontinued">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/pokefusion.svg" width="44" height="44" alt="PokeFusion icon" loading="lazy">
             <div>
@@ -354,7 +354,7 @@
               <div class="project-tagline">Infinite Fusion Playground</div>
             </div>
           </div>
-          <span class="badge-status archived">Archived in 09/2026</span>
+          <span class="badge-status discontinued"><i class="badge-ico" aria-hidden="true"></i>Discontinued</span>
           <p class="desc">A fusion sprite viewer for Pok&eacute;mon Infinite Fusion &mdash; pick two Pok&eacute;mon to see their fusion, or compare a whole team&rsquo;s fusions side by side. A fork of Aegide&rsquo;s Fusion Calculator.</p>
           <p class="discontinued-note">Discontinued: the upstream repo that hosted its sprite assets was taken down. The repository is archived on GitHub and read-only.</p>
           <div class="stack">

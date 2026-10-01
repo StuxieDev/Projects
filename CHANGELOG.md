@@ -4,6 +4,17 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.3.0
+
+### Added
+- Project cards use the same one-badge system as Stux.Group Services: a badge above the description, chosen from the card's `data-state` (Discontinued, Template, Maintenance, Coming soon), with Coming soon showing a rocket and Maintenance a wrench
+- Cards with `data-monitor="<slug>"` show a live Online, Degraded or Offline badge (with a pulsing dot for Online) read from the StuxieDev Status page's `summary.json` on raw.githubusercontent.com; the badge stays hidden if it can't be loaded
+
+### Changed
+- The hard-coded "Live" badges are replaced by the live status badge, so they now reflect real uptime. Cards with no monitor (Sm.lol, plugins, scripts) show no badge
+- The Discontinued cards (StuxCogs, PokeFusion) use the Discontinued badge instead of "Archived in 09/2026"
+- The privacy page mentions the status data request to raw.githubusercontent.com. CONTRIBUTING explains how to mark a card
+
 ## v1.2.0
 
 ### Added

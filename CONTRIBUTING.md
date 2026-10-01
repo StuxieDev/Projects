@@ -38,7 +38,9 @@ The projects list has four sections, in this order:
 1. Add/update the entry in the README's project table
 2. Add/update the matching `<article class="project-card">` block in `index.html`
 3. Drop a logo/icon into `assets/img/projects/` if the project doesn't already have a suitable square icon there
-4. When a project is discontinued, move its card into the "Discontinued" section: add the `discontinued` class, swap the status badge for `<span class="badge-status archived">Discontinued</span>` (or `Archived` once the repo is archived on GitHub), drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
+4. **One badge per card**, above the description, from the card's `data-state` (space-separated; the first that applies wins: `discontinued`, `template`, `maintenance`, `soon`). Render the matching badge in the HTML, e.g. `<span class="badge-status soon"><i class="badge-ico" aria-hidden="true"></i>Coming soon</span>` (Maintenance uses `maintenance`, Template `template`, Discontinued `discontinued`; `main.js` re-resolves it if a card lists several). Each badge shows exactly one icon: Coming soon a rocket, Maintenance a wrench, the live states a status dot, Template and Discontinued none.
+5. **Live status:** with no `data-state`, a card with `data-monitor="<slug>"` (a monitor slug from `StuxieDev/Status`'s `.githup.yml`) gets one live badge from `main.js`, read from `https://raw.githubusercontent.com/StuxieDev/Status/main/data/summary.json`: Online, Degraded or Offline. Add `<span class="badge-status live" hidden></span>` above the description; don't hard-code a "Live" badge. No monitor, or status unavailable: no badge.
+6. When a project is discontinued, move its card into the "Discontinued" section: add the `discontinued` class, set `data-state="discontinued"` on the card and use the `<span class="badge-status discontinued">` badge, drop any dead Website link, and add a one-line `<p class="discontinued-note">` saying why
 
 ## Legal pages
 

@@ -38,6 +38,63 @@
     var start = parseInt(el.getAttribute("data-year-start"), 10);
     el.textContent = start && start < year ? start + "–" + year : year;
   });
+
+  // One badge per card, above the description. data-state holds the card's
+  // declared state(s); the first that applies wins (discontinued, template,
+  // maintenance, soon). The HTML already renders it, so this only re-resolves
+  // a card with several states. With no state, the live status from
+  // StuxieDev Status fills the badge for cards with data-monitor="<slug>",
+  // and nothing is shown if it can't load.
+  var STATES = [
+    ["discontinued", "archived", "Discontinued"], ["template", "template", "Template"],
+    ["maintenance", "maintenance", "Maintenance"], ["soon", "soon", "Coming soon"]
+  ];
+  function stateOf(card) {
+    var have = (card.getAttribute("data-state") || "").split(/\s+/);
+    for (var i = 0; i < STATES.length; i++) if (have.indexOf(STATES[i][0]) !== -1) return STATES[i];
+    return null;
+  }
+  function badgeOf(card) {
+    var badge = card.querySelector(":scope > .badge-status");
+    if (!badge) {
+      badge = document.createElement("span");
+      badge.hidden = true;
+      var desc = card.querySelector(".desc");
+      card.insertBefore(badge, desc);
+    }
+    return badge;
+  }
+  document.querySelectorAll(".project-card").forEach(function (card) {
+    var st = stateOf(card);
+    if (!st) return;
+    var badge = badgeOf(card);
+    badge.className = "badge-status " + st[1];
+    badge.textContent = "";
+    var ico = document.createElement("i");
+    ico.className = "badge-ico";
+    ico.setAttribute("aria-hidden", "true");
+    badge.appendChild(ico);
+    badge.appendChild(document.createTextNode(st[2]));
+    badge.hidden = false;
+  });
+  var SUMMARY = "https://raw.githubusercontent.com/StuxieDev/Status/main/data/summary.json";
+  var PILL = { up: "Online", degraded: "Degraded", down: "Offline" };
+  fetch(SUMMARY + "?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (summary) {
+      var bySlug = {};
+      (summary.monitors || []).forEach(function (m) { bySlug[m.slug] = m; });
+      document.querySelectorAll("[data-monitor]").forEach(function (card) {
+        var m = bySlug[card.getAttribute("data-monitor")];
+        if (stateOf(card) || !m || !PILL[m.status]) return;
+        var badge = badgeOf(card);
+        badge.className = "badge-status " + m.status;
+        badge.textContent = PILL[m.status];
+        badge.title = "Live from StuxieDev Status";
+        badge.hidden = false;
+      });
+    })
+    .catch(function () {});
 })();
 
 // Footer version link: this site's own VERSION.md, published with the site. If it can't be
