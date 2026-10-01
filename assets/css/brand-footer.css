@@ -110,3 +110,10 @@
         transition: none;
     }
 }
+
+/* Created-with icons: optical sizing so the solid heart is not bigger than the code and coffee icons.
+   Icons are sized in em (SVG box 1em; FA glyph via font-size), then scaled per icon. */
+.made-with svg { width: 1em; height: 1em; flex: none; }
+.made-with-love { font-size: 0.85em; }
+.made-with-code { font-size: 1em; }
+.made-with-coffee { font-size: 0.95em; }
