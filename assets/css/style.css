@@ -264,6 +264,10 @@ a { color: inherit; text-decoration: none; }
 .btn-primary:hover { box-shadow: 0 10px 28px -6px rgba(214, 2, 112, 0.6); }
 .btn-ghost { color: var(--text); background: rgba(255, 255, 255, 0.02); }
 .btn-ghost:hover { background: var(--accent-soft); border-color: var(--accent); }
+.btn-season { font-family: var(--font-display); cursor: pointer; }
+.btn-season[hidden] { display: none; }
+.hero .season-note { margin-top: 14px; font-size: 0.8rem; color: var(--text-faint); }
+.hero .season-note a { color: var(--accent-bright); }
 
 /* Sections */
 .section { padding: 72px 0; }

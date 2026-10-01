@@ -4,6 +4,14 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.2.0
+
+### Added
+- A seasonal overlay button in the hero, using SeasonalOverlaysLibrary from StuxAPIs. Its label is derived from today's overlay and reads "Pumpkins?" until clicked, then "Pumpkins!" while the overlay plays, then back to "?" when it ends. The label change also applies when reduced motion is requested
+
+### Changed
+- The privacy policy lists the seasonal overlay script (served from seasonaloverlayslibrary.stuxapis.net) as a third-party resource
+
 ## v1.1.1
 
 ### Fixed
