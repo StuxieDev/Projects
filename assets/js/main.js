@@ -43,7 +43,7 @@
   // declared state(s); the first that applies wins (discontinued, template,
   // maintenance, soon). The HTML already renders it, so this only re-resolves
   // a card with several states. With no state, the live status from
-  // StuxieDev Status fills the badge for cards with data-monitor="<slug>",
+  // the status pages named by data-monitor="<slug>" or "<source>:<slug>" fill the badge,
   // and nothing is shown if it can't load.
   var STATES = [
     ["discontinued", "archived", "Discontinued"], ["template", "template", "Template"],
@@ -77,24 +77,46 @@
     badge.appendChild(document.createTextNode(st[2]));
     badge.hidden = false;
   });
-  var SUMMARY = "https://raw.githubusercontent.com/StuxieDev/Status/main/data/summary.json";
+  // Live status sources: data-monitor="<slug>" reads the StuxieDev Status page,
+  // data-monitor="<source>:<slug>" reads another status page's summary.json.
+  var RAW = "https://raw.githubusercontent.com/";
+  var SOURCES = {
+    "stuxiedev": { url: RAW + "StuxieDev/Status/main/data/summary.json", site: "status.stuxie.dev" },
+    "stux-dev": { url: RAW + "StuxDev/Status/main/data/summary.json", site: "status.stux.dev" },
+    "stux-group": { url: RAW + "StuxGroup/Status/main/data/summary.json", site: "status.stux.group" },
+    "robostux": { url: RAW + "RoboStux/Status/main/data/summary.json", site: "status.robo.st" }
+  };
   var PILL = { up: "Online", degraded: "Degraded", down: "Offline" };
-  fetch(SUMMARY + "?t=" + Date.now(), { cache: "no-store" })
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(function (summary) {
-      var bySlug = {};
-      (summary.monitors || []).forEach(function (m) { bySlug[m.slug] = m; });
-      document.querySelectorAll("[data-monitor]").forEach(function (card) {
-        var m = bySlug[card.getAttribute("data-monitor")];
-        if (stateOf(card) || !m || !PILL[m.status]) return;
-        var badge = badgeOf(card);
-        badge.className = "badge-status " + m.status;
-        badge.textContent = PILL[m.status];
-        badge.title = "Live from StuxieDev Status";
-        badge.hidden = false;
-      });
-    })
-    .catch(function () {});
+  function monitorOf(card) {
+    var v = card.getAttribute("data-monitor") || "";
+    var i = v.indexOf(":");
+    return i < 0 ? { source: "stuxiedev", slug: v } : { source: v.slice(0, i), slug: v.slice(i + 1) };
+  }
+  var wanted = {};
+  document.querySelectorAll("[data-monitor]").forEach(function (card) {
+    var m = monitorOf(card);
+    if (SOURCES[m.source]) wanted[m.source] = true;
+  });
+  Object.keys(wanted).forEach(function (source) {
+    fetch(SOURCES[source].url + "?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (summary) {
+        var bySlug = {};
+        (summary.monitors || []).forEach(function (m) { bySlug[m.slug] = m; });
+        document.querySelectorAll("[data-monitor]").forEach(function (card) {
+          var want = monitorOf(card);
+          if (want.source !== source) return;
+          var m = bySlug[want.slug];
+          if (stateOf(card) || !m || !PILL[m.status]) return;
+          var badge = badgeOf(card);
+          badge.className = "badge-status " + m.status;
+          badge.textContent = PILL[m.status];
+          badge.title = "Live from " + SOURCES[source].site;
+          badge.hidden = false;
+        });
+      })
+      .catch(function () {});
+  });
 })();
 
 // Footer version link: this site's own VERSION.md, published with the site. If it can't be

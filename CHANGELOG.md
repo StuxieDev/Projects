@@ -4,6 +4,21 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.0
+
+### Added
+- Cards can name their status source with `data-monitor="<source>:<slug>"` (sources `stuxiedev` (default), `stux-dev`, `stux-group`, `robostux`); Sm.lol now shows its live badge from Stux.Dev Status
+- `scripts/check-repo-links.sh`, which lists linked GitHub repositories that are not public, and a matching rule in `CONTRIBUTING.md`
+
+### Changed
+- Project card titles wrap at word boundaries and, as a safety net, anywhere (`overflow-wrap: anywhere`)
+
+### Fixed
+- The RoboStux card's monitor now points at the real slug on RoboStux Status (`robostux:website`), so its live badge shows
+
+### Removed
+- The README's link to the private StuxieDev/Archives repository
+
 ## v1.3.0
 
 ### Added

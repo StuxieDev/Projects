@@ -610,3 +610,8 @@ a { color: inherit; text-decoration: none; }
 .cl-list strong { color: var(--text); }
 .cl-h4 { margin: 10px 0 6px; font-size: 0.95rem; }
 .cl-msg { color: var(--text-muted); }
+
+
+/* Long names wrap at word boundaries, or anywhere as a last resort */
+.project-card h3 { overflow-wrap: anywhere; }
+.project-card .project-top > div { min-width: 0; }

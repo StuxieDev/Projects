@@ -56,3 +56,4 @@ All six live under `legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaim
 
 - Open changed pages in a browser via `./dev-server.sh` and click through — this project has no automated test suite, so a live check is the only real verification
 - Check both the dev-mode banner (default) and `--no-dev-mode` behave as expected if you touched `dev-server.js` or `assets/js/dev-mode.js`
+- Only link a repository if it is public: no "Repository" link on a card for a private or missing repo. Run `scripts/check-repo-links.sh` (needs `gh`) to list linked repos that are not public
