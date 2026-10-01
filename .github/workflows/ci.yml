@@ -18,7 +18,7 @@ jobs:
       - name: Key files exist
         run: |
           set -euo pipefail
-          for f in index.html 404.html CNAME legal/index.html legal/privacy/index.html legal/terms/index.html legal/cookies/index.html legal/imprint/index.html legal/disclaimer/index.html legal/opt-out/index.html README.md CHANGELOG.md VERSION.md CONTRIBUTING.md commit.sh commit.bat; do
+          for f in index.html 404.html CNAME legal/index.html legal/privacy/index.html legal/terms/index.html legal/cookies/index.html legal/imprint/index.html legal/disclaimer/index.html legal/opt-out/index.html sitemap.xml sitemap/index.html robots.txt README.md CHANGELOG.md VERSION.md CONTRIBUTING.md commit.sh commit.bat; do
             if [ ! -f "$f" ]; then echo "::error::Missing $f"; exit 1; fi
           done
       - name: HTML parses and local links resolve

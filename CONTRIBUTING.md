@@ -21,6 +21,7 @@ No install step — there's no `package.json`, no dependencies, nothing to build
 ## Project conventions
 
 - **Plain HTML/CSS/JS, no framework, no build step.** Every page is a real `.html` file — no templating engine, no client-side router.
+- The sitemap (`sitemap.xml`, `sitemap/index.html`, `robots.txt`) is generated: after adding or removing a page, edit the `PAGES` list in `scripts/build-sitemap.py` and run `python scripts/build-sitemap.py`, then commit the result.
 - Clean URLs use a folder-per-page layout (`legal/privacy/index.html` → `/legal/privacy/`), not a `.html` suffix.
 - Shared styles live in `assets/css/style.css`; shared behaviour in `assets/js/main.js`. There's enough page-to-page duplication (header/footer markup) that a real templating system isn't worth the added tooling for a site this size — copy the existing header/footer block when adding a page rather than introducing one.
 - `assets/js/dev-mode.js` is the production default (`DEV_MODE = false`), committed as-is. `dev-server.js` intercepts that one path locally and serves a generated version instead — see the comment at the top of `dev-server.js`.
