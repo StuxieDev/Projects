@@ -4,6 +4,11 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.0.0
+
+### Changed
+- The first stable release: StuxieDev Projects moves from 0.x to 1.0.0. The site is unchanged from v0.8.0; from here on, versions follow semantic versioning with 1.0.0 as the stable baseline
+
 ## v0.8.0
 
 ### Added
