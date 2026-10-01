@@ -4,13 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0f0d12">
-  <title>Imprint — StuxieDev Projects</title>
-  <meta name="description" content="Who operates StuxieDev Projects and how to reach them.">
+  <title>Changelogs — StuxieDev Projects</title>
+  <meta name="description" content="Release notes for StuxieDev Projects, release by release.">
   <link rel="icon" type="image/svg+xml" href="/assets/img/icon.svg">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/site-banner.css">
   <link rel="stylesheet" href="/assets/css/brand-footer.css">
   <script src="/assets/js/dev-mode.js"></script>
+  <link rel="canonical" href="https://projects.stuxie.dev/changelogs/">
 </head>
 <body>
 
@@ -34,35 +35,18 @@
       <div class="breadcrumb">
         <a href="/">Home</a>
         <span class="bc-sep">/</span>
-        <a href="/legal/">Boring Legal Stuff</a>
-        <a href="/sitemap/">Sitemap</a>
-        <span class="bc-sep">/</span>
-        <span class="bc-cur">Imprint</span>
+        <span class="bc-cur">Changelogs</span>
       </div>
-      <h1 class="page-title">Imprint</h1>
-      <p class="page-desc">Who operates this site and how to reach them.</p>
+      <h1 class="page-title">Changelogs</h1>
+      <p class="page-desc">What changed on this site, release by release, newest first. Source: <a href="https://github.com/StuxieDev/Projects/blob/main/CHANGELOG.md">CHANGELOG.md</a>.</p>
     </div>
   </div>
 
   <section class="section" style="padding-top: 0;">
     <div class="container">
-      <div class="prose-page">
-        <div class="prose-body">
-
-          <h2>Operator</h2>
-          <p>StuxieDev Projects is an independent, personal project operated by Leo Ridgwell (StuxieDev).</p>
-
-          <h2>Contact</h2>
-          <p>Email: <a href="mailto:legal@stuxie.dev">legal@stuxie.dev</a><br>
-          GitHub: <a href="https://github.com/StuxieDev" target="_blank" rel="noopener">github.com/StuxieDev</a></p>
-
-          <h2>Hosting</h2>
-          <p>This site is hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>, a service of GitHub, Inc.</p>
-
-          <h2>Responsibility</h2>
-          <p>Leo Ridgwell is solely responsible for the content of this index page. Each linked project is responsible for the content and behaviour of its own site and repository.</p>
-
-        </div>
+      <div class="cl-wrap">
+        <p class="cl-current">Current version: <span id="cl-version"></span></p>
+        <div id="cl-body" aria-live="polite"><p class="cl-msg">Loading the changelog&hellip;</p></div>
       </div>
     </div>
   </section>
@@ -83,6 +67,7 @@
   </footer>
 
   <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/changelogs.js" defer></script>
   <script src="/assets/js/site-banner.js"></script>
 </body>
 </html>

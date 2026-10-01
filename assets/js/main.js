@@ -39,3 +39,21 @@
     el.textContent = start && start < year ? start + "–" + year : year;
   });
 })();
+
+// Footer version link: this site's own VERSION.md, published with the site. If it can't be
+// read, the link keeps its fallback text ("Changelogs").
+(function () {
+  var links = document.querySelectorAll("[data-site-version]");
+  if (!links.length || !window.fetch) return;
+  fetch("/VERSION.md", { cache: "no-cache" }).then(function (r) {
+    if (!r.ok) throw new Error(r.status);
+    return r.text();
+  }).then(function (v) {
+    v = v.trim().replace(/^v/i, "");
+    if (!/^\d+\.\d+\.\d+/.test(v)) return;
+    Array.prototype.forEach.call(links, function (a) {
+      a.textContent = "v" + v;
+      a.setAttribute("title", "Version " + v + ": changelogs");
+    });
+  }).catch(function () {});
+})();

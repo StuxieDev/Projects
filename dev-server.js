@@ -38,6 +38,7 @@ const MIME = {
   ".ico": "image/x-icon",
   ".json": "application/json; charset=utf-8",
   ".txt": "text/plain; charset=utf-8",
+  ".md": "text/markdown; charset=utf-8",
 };
 
 const server = http.createServer((req, res) => {

@@ -27,6 +27,7 @@ PAGES = [
     ("/legal/imprint/", "legal/imprint/index.html", "Imprint", "Who operates this site and how to reach them.", "0.2", "yearly"),
     ("/legal/disclaimer/", "legal/disclaimer/index.html", "Disclaimer", "Copyright, accuracy, and third-party links.", "0.2", "yearly"),
     ("/legal/opt-out/", "legal/opt-out/index.html", "Opt-Out Preferences", "There's nothing to sell, so nothing to opt out of.", "0.2", "yearly"),
+    ("/changelogs/", "changelogs/index.html", "Changelogs", "Release notes for this site, release by release, newest first.", "0.3", "monthly"),
     ("/sitemap/", "sitemap/index.html", "Sitemap", "Every page on this site, with a link to the XML version.", "0.1", "monthly"),
 ]
 

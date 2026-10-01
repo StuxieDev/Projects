@@ -4,6 +4,16 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.1.0
+
+### Added
+- A **Changelogs** page at `/changelogs/`, rendering this changelog in the site's own layout with colour-coded section badges (Added, Changed, Fixed, Removed, Security, Deprecated, always in that order). `/changelog/` redirects to it, and the page is in the sitemap
+- The footer's version number (read from the published `VERSION.md`, falling back to "Changelogs") links to the changelogs page
+- `CHANGELOG.md` and `VERSION.md` are now published with the site
+
+### Removed
+- The "A StuxieDev Project" text link and its separator from the footer brand block; the logo, "Created with" line and links stay
+
 ## v1.0.0
 
 ### Changed

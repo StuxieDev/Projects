@@ -32,9 +32,7 @@ jobs:
             *.sh
             *.bat
             dev-server.js
-            CHANGELOG.md
             CONTRIBUTING.md
             README.md
-            VERSION.md
       - id: deployment
         uses: actions/deploy-pages@v4
