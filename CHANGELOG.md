@@ -4,6 +4,12 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.5.3
+
+### Fixed
+
+- SNAIRK's card uses SNAIRK's logo icon (the lightning bolt on a translucent tile, as in its header) instead of its favicon
+
 ## v1.5.2
 
 ### Fixed
