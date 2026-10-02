@@ -78,7 +78,8 @@
     badge.hidden = false;
   });
   // Live status sources: data-monitor="<slug>" reads the StuxieDev Status page,
-  // data-monitor="<source>:<slug>" reads another status page's summary.json.
+  // data-monitor="<source>:<slug>" reads another status page's summary.json, and
+  // data-monitor="<source>:*" shows that status page's overall status (the Status card).
   var RAW = "https://raw.githubusercontent.com/";
   var SOURCES = {
     "stuxiedev": { url: RAW + "StuxieDev/Status/main/data/summary.json", site: "status.stuxie.dev" },
@@ -87,6 +88,7 @@
     "robostux": { url: RAW + "RoboStux/Status/main/data/summary.json", site: "status.robo.st" }
   };
   var PILL = { up: "Online", degraded: "Degraded", down: "Offline" };
+  var WHOLE = { up: "All operational", degraded: "Degraded", partial: "Partial outage", down: "Major outage" };
   function monitorOf(card) {
     var v = card.getAttribute("data-monitor") || "";
     var i = v.indexOf(":");
@@ -106,11 +108,12 @@
         document.querySelectorAll("[data-monitor]").forEach(function (card) {
           var want = monitorOf(card);
           if (want.source !== source) return;
-          var m = bySlug[want.slug];
-          if (stateOf(card) || !m || !PILL[m.status]) return;
+          var whole = want.slug === "*";
+          var m = whole ? { status: summary.status } : bySlug[want.slug];
+          if (stateOf(card) || !m || !(whole ? WHOLE[m.status] : PILL[m.status])) return;
           var badge = badgeOf(card);
-          badge.className = "badge-status " + m.status;
-          badge.textContent = PILL[m.status];
+          badge.className = "badge-status " + (m.status === "partial" ? "degraded" : m.status);
+          badge.textContent = whole ? WHOLE[m.status] : PILL[m.status];
           badge.title = "Live from " + SOURCES[source].site;
           badge.hidden = false;
         });

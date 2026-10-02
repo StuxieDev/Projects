@@ -4,6 +4,21 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.5.0
+
+### Added
+
+- SNAIRK, the satirical parody of snarky AI chat products, as a featured project, with a live status badge from StuxieDev Status
+- Status (status.stuxie.dev) in More projects; its badge shows the status page's overall status ("All operational", "Partial outage", …) through the new `data-monitor="<source>:*"`
+
+### Changed
+
+- The footer has a single StuxieDev mark: the icon beside the copyright line is gone (the StuxieDev logo on the row below stays)
+
+### Removed
+
+- Sm.lol, which is a Stux.Dev service rather than a StuxieDev project (it's listed on services.stux.dev)
+
 ## v1.4.3
 
 ### Fixed

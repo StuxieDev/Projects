@@ -30,7 +30,7 @@ No install step — there's no `package.json`, no dependencies, nothing to build
 
 The projects list has four sections, in this order:
 
-- **Featured**: the flagship projects (currently the StuxieDev Website, RoboStux, and Sm.lol)
+- **Featured**: the flagship projects (currently the StuxieDev Website, RoboStux, and SNAIRK)
 - **More projects**: other apps, mods, and sites with their own home
 - **Scripts & smaller bits**: scripts, bot cogs, and small utilities, shown as compact cards (44px icons)
 - **Discontinued**: retired projects (see step 4)
