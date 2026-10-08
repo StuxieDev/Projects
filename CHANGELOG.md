@@ -4,6 +4,12 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.5.5
+
+### Changed
+
+- SNAIRK's card uses SNAIRK's new logo, the smirking robot in a speech bubble, in place of the old lightning bolt (still on a translucent tile, as in SNAIRK's header)
+
 ## v1.5.4
 
 ### Changed
