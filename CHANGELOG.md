@@ -4,6 +4,12 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.6.0
+
+### Added
+
+- A light theme, following the system preference: light backgrounds and cards, dark text, and StuxieDev purple deepened to `#84397f` (pink `#b0025c`) so text, links and the gradient buttons keep at least 4.5:1 contrast. The status badges, changelog labels and dev-mode banner switch to their deeper light-theme colours too. The dark theme is unchanged
+
 ## v1.5.5
 
 ### Changed

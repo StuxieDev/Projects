@@ -11,6 +11,7 @@
 - Plain HTML, CSS, and JavaScript — no framework, no bundler, no dependencies to install
 - Deployed to [GitHub Pages](https://pages.github.com/) via `.github/workflows/pages.yml`
 - No accounts, no ads, no tracking scripts
+- Dark and light themes, following your system preference
 
 ---
 
