@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <defs>
-    <linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#b565ae"/>
-      <stop offset="100%" stop-color="#d60270"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="16" fill="#170b1c"/>
-  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" fill="none" stroke="url(#ag)" stroke-width="1.5" opacity="0.6"/>
-  <rect x="14" y="18" width="36" height="10" rx="3" fill="none" stroke="url(#ag)" stroke-width="3.5"/>
-  <path d="M17 28 L17 44 A4 4 0 0 0 21 48 L43 48 A4 4 0 0 0 47 44 L47 28" fill="none" stroke="url(#ag)" stroke-width="3.5" stroke-linejoin="round"/>
-  <line x1="27" y1="35" x2="37" y2="35" stroke="url(#ag)" stroke-width="3.5" stroke-linecap="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="ag" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#b565ae"/><stop offset="100%" stop-color="#d60270"/></linearGradient></defs><rect width="64" height="64" fill="#170b1c" rx="16"/><rect width="61" height="61" x="1.5" y="1.5" fill="none" stroke="url(#ag)" stroke-width="1.5" opacity=".6" rx="14.5"/><rect width="36" height="10" x="14" y="18" fill="none" stroke="url(#ag)" stroke-width="3.5" rx="3"/><path fill="none" stroke="url(#ag)" stroke-linejoin="round" stroke-width="3.5" d="M17 28 L17 44 A4 4 0 0 0 21 48 L43 48 A4 4 0 0 0 47 44 L47 28"/><line x1="27" x2="37" y1="35" y2="35" stroke="url(#ag)" stroke-linecap="round" stroke-width="3.5"/></svg>
