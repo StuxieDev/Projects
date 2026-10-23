@@ -30,6 +30,7 @@
 | YouTubeSync | Jellyfin plugin: YouTube channels and playlists as shows, streamed on demand via yt-dlp | — | [StuxieDev/YouTubeSyncPlugin](https://github.com/StuxieDev/YouTubeSyncPlugin) |
 | Trakt | Jellyfin plugin: sync watch history with trakt.tv and scrobble playback | — | [StuxieDev/TraktPlugin](https://github.com/StuxieDev/TraktPlugin) |
 | AnimeThemes | Jellyfin plugin: anime openings and endings from animethemes.moe as theme songs and videos | — | [StuxieDev/AnimeThemesPlugin](https://github.com/StuxieDev/AnimeThemesPlugin) |
+| MyAnimeList | Jellyfin plugin: MyAnimeList anime metadata, and watch status sync with MyAnimeList and other anime list sites | — | [StuxieDev/MyAnimeListPlugin](https://github.com/StuxieDev/MyAnimeListPlugin) |
 | Fix Blank Steam Icons | Restores blank Steam shortcut icons from Steam's CDN | — | [StuxieDev/Fix-Blank-Steam-Icons](https://github.com/StuxieDev/Fix-Blank-Steam-Icons) |
 | PokeFusion | **Archived in 09/2026.** Pokémon Infinite Fusion playground, discontinued because its upstream sprite assets were taken down | — | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
 | StuxCogs | **Archived in 09/2026.** Cogs for Red-DiscordBot, discontinued and no longer maintained | — | [StuxieDev/StuxCogs](https://github.com/StuxieDev/StuxCogs) |
