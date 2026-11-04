@@ -66,19 +66,20 @@
       <h3 class="subhead">Featured</h3>
       <div class="project-grid">
 
-        <article data-monitor="stuxiedev" class="project-card featured">
+        <article data-monitor="stuxiedev" data-state="development" class="project-card featured">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/stuxiedev-icon.png" width="64" height="64" alt="StuxieDev Website icon" loading="lazy">
             <div>
               <h3>StuxieDev Website</h3>
-              <div class="project-tagline">Websites, Games &amp; Apps, Always Developing!</div>
+              <div class="project-tagline">A Bi Kat Who is Always Developing!</div>
             </div>
           </div>
-          <span class="badge-status live" hidden></span>
-          <p class="desc">The home of StuxieDev: portfolio, work and education history, and links out to everything else &mdash; websites, games, apps, and the projects on this page.</p>
+          <span class="badge-status building"><i class="badge-ico" aria-hidden="true"></i>In development</span>
+          <p class="desc">Version 2 of stuxie.dev, the home of StuxieDev: the portfolio, the organisations and every way to get in touch. Fully custom PHP, CSS and JavaScript with no framework, and portfolio screenshots that refresh themselves every day. It replaces the original WordPress site, now at <a href="https://v1.stuxie.dev" target="_blank" rel="noopener">v1.stuxie.dev</a>.</p>
           <div class="stack">
-            <span class="pill">WordPress</span>
-            <span class="pill">Portfolio</span>
+            <span class="pill">PHP</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
           </div>
           <div class="project-links">
             <a href="https://stuxie.dev" target="_blank" rel="noopener">Website</a>
@@ -94,10 +95,10 @@
             </div>
           </div>
           <span class="badge-status live" hidden></span>
-          <p class="desc">A Discord bot that bundles moderation, utilities, fun, and automation into one &mdash; so a server needs one bot instead of five.</p>
+          <p class="desc">A bot that bundles moderation, utilities, fun, and automation into one &mdash; so a server needs one bot instead of five.</p>
           <div class="stack">
             <span class="pill">Python</span>
-            <span class="pill">Discord bot</span>
+            <span class="pill">Bot</span>
           </div>
           <div class="project-links">
             <a href="https://robo.st" target="_blank" rel="noopener">Website</a>
@@ -130,6 +131,25 @@
 
       <h3 class="subhead">More projects</h3>
       <div class="project-grid two-up">
+
+        <article data-state="development" class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/projects/stuxiedev-icon.png" width="56" height="56" alt="StuxieDev Social icon" loading="lazy">
+            <div>
+              <h3>StuxieDev Social</h3>
+              <div class="project-tagline">A Bi Kat Who is Always Developing, on the Fediverse</div>
+            </div>
+          </div>
+          <span class="badge-status building"><i class="badge-ico" aria-hidden="true"></i>In development</span>
+          <p class="desc">StuxieDev&rsquo;s own Fediverse server and home of <strong>@stuxiedev@stuxie.dev</strong>: GoToSocial with a custom StuxieDev theme to match stuxie.dev.</p>
+          <div class="stack">
+            <span class="pill">GoToSocial</span>
+            <span class="pill">Fediverse</span>
+          </div>
+          <div class="project-links">
+            <a href="https://social.stuxie.dev" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
 
         <article data-monitor="archives-stuxie-dev" class="project-card">
           <div class="project-top">
@@ -236,7 +256,7 @@
       <h3 class="subhead">Jellyfin plugins</h3>
       <div class="project-grid compact">
 
-        <article class="project-card">
+        <article data-state="development" class="project-card">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/youtubesync.svg" width="44" height="44" alt="YouTubeSync icon" loading="lazy">
             <div>
@@ -244,6 +264,7 @@
               <div class="project-tagline">YouTube channels and playlists in Jellyfin</div>
             </div>
           </div>
+          <span class="badge-status building"><i class="badge-ico" aria-hidden="true"></i>In development</span>
           <p class="desc">Syncs YouTube channels and playlists into your library as shows with artwork and subtitles, and streams videos on demand through yt-dlp &mdash; nothing is downloaded.</p>
           <div class="stack">
             <span class="pill">C#</span>
@@ -255,7 +276,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article data-state="development" class="project-card">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/trakt-plugin.png" width="44" height="44" alt="Trakt icon" loading="lazy">
             <div>
@@ -263,6 +284,7 @@
               <div class="project-tagline">Sync your watch history with trakt.tv</div>
             </div>
           </div>
+          <span class="badge-status building"><i class="badge-ico" aria-hidden="true"></i>In development</span>
           <p class="desc">Syncs your library and watch states with trakt.tv and scrobbles what you watch as you watch it. Built for Jellyfin 12.</p>
           <div class="stack">
             <span class="pill">C#</span>
@@ -273,7 +295,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article data-state="development" class="project-card">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/animethemes.svg" width="44" height="44" alt="AnimeThemes icon" loading="lazy">
             <div>
@@ -281,6 +303,7 @@
               <div class="project-tagline">Anime openings and endings as theme music</div>
             </div>
           </div>
+          <span class="badge-status building"><i class="badge-ico" aria-hidden="true"></i>In development</span>
           <p class="desc">Fetches anime OPs and EDs from animethemes.moe and saves them as theme songs or theme videos, so they play while you browse a show. Built for Jellyfin 12.</p>
           <div class="stack">
             <span class="pill">C#</span>
@@ -291,7 +314,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+        <article data-state="development" class="project-card">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/myanimelist.svg" width="44" height="44" alt="MyAnimeList plugin icon" loading="lazy">
             <div>
@@ -299,6 +322,7 @@
               <div class="project-tagline">Anime metadata and watch status sync</div>
             </div>
           </div>
+          <span class="badge-status building"><i class="badge-ico" aria-hidden="true"></i>In development</span>
           <p class="desc">Adds MyAnimeList as a metadata provider for anime, and updates your anime list as you watch, on MyAnimeList, AniList, Kitsu, Annict, Shikimori or Simkl. Built for Jellyfin 12.</p>
           <div class="stack">
             <span class="pill">C#</span>

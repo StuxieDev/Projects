@@ -4,6 +4,21 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.04
+
+### Added
+
+- A **StuxieDev Social** card (social.stuxie.dev, StuxieDev's own Fediverse server, home of @stuxiedev@stuxie.dev) in More projects, and its row in the README's project table
+- An **In development** status badge with a code-brackets icon: give a card `data-state="development"`. It ranks after Maintenance and before Coming soon
+
+### Changed
+
+- Synced with the portfolio on stuxie.dev:
+  - The **StuxieDev Website** card describes version 2 (fully custom PHP, CSS and JavaScript, replacing the WordPress site now at v1.stuxie.dev), with the new slogan, new tech pills and an In development badge
+  - **RoboStux** is described as a bot rather than a Discord bot, since StuxieDev makes bots for Fluxer, Discord and Twitch
+  - The four **Jellyfin plugins** show an In development badge, since they're pre-stable
+  - The README's project table says the same, and notes the portfolio to keep it in step with
+
 ## v26.10.31
 
 ### Changed

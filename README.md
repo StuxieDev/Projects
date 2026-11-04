@@ -19,25 +19,26 @@
 
 | Project | What it is | Site | Repo |
 |---|---|---|---|
-| StuxieDev Website | StuxieDev's home: portfolio, work history, and links to everything else | [stuxie.dev](https://stuxie.dev) | — |
-| RoboStux | All-in-one Discord bot: moderation, utilities, fun, and automation | [robo.st](https://robo.st) | [RoboStux](https://github.com/RoboStux) (org) |
+| StuxieDev Website | **In development.** Version 2 of StuxieDev's home: portfolio, organisations, and links to everything else, fully custom PHP/CSS/JS (the old WordPress site is at [v1.stuxie.dev](https://v1.stuxie.dev)) | [stuxie.dev](https://stuxie.dev) | — |
+| StuxieDev Social | **In development.** StuxieDev's own Fediverse server (GoToSocial), home of @stuxiedev@stuxie.dev | [social.stuxie.dev](https://social.stuxie.dev) | — (private) |
+| RoboStux | All-in-one bot: moderation, utilities, fun, and automation | [robo.st](https://robo.st) | [RoboStux](https://github.com/RoboStux) (org) |
 | SNAIRK | Satirical parody of snarky AI chat products (no real AI) | [snairk.stuxie.dev](https://snairk.stuxie.dev) | [StuxieDev/SNAIRK](https://github.com/StuxieDev/SNAIRK) |
 | StuxieDev Archives | Archive of retired StuxieDev projects | [archives.stuxie.dev](https://archives.stuxie.dev) | — (private) |
 | Status | Live status of StuxieDev's websites and projects, powered by GitHup | [status.stuxie.dev](https://status.stuxie.dev) | [StuxieDev/Status](https://github.com/StuxieDev/Status) |
 | TIGHC | The Intiface Game Haptics Controller | [tighc.stuxie.dev](https://tighc.stuxie.dev) | [TIGHC/Engine](https://github.com/TIGHC/Engine) |
 | TS4RLS | The Sims 4 Random Loading Screen | [ts4rls.stuxie.dev](https://ts4rls.stuxie.dev) | [TS4RLS/Engine](https://github.com/TS4RLS/Engine) |
 | TWRAR | The Website Recorder And Replayer | [twrar.stuxie.dev](https://twrar.stuxie.dev) | [TWRAR/Engine](https://github.com/TWRAR/Engine) |
-| YouTubeSync | Jellyfin plugin: YouTube channels and playlists as shows, streamed on demand via yt-dlp | — | [StuxieDev/YouTubeSyncPlugin](https://github.com/StuxieDev/YouTubeSyncPlugin) |
-| Trakt | Jellyfin plugin: sync watch history with trakt.tv and scrobble playback | — | [StuxieDev/TraktPlugin](https://github.com/StuxieDev/TraktPlugin) |
-| AnimeThemes | Jellyfin plugin: anime openings and endings from animethemes.moe as theme songs and videos | — | [StuxieDev/AnimeThemesPlugin](https://github.com/StuxieDev/AnimeThemesPlugin) |
-| MyAnimeList | Jellyfin plugin: MyAnimeList anime metadata, and watch status sync with MyAnimeList and other anime list sites | — | [StuxieDev/MyAnimeListPlugin](https://github.com/StuxieDev/MyAnimeListPlugin) |
+| YouTubeSync | **In development.** Jellyfin plugin: YouTube channels and playlists as shows, streamed on demand via yt-dlp | — | [StuxieDev/YouTubeSyncPlugin](https://github.com/StuxieDev/YouTubeSyncPlugin) |
+| Trakt | **In development.** Jellyfin plugin: sync watch history with trakt.tv and scrobble playback | — | [StuxieDev/TraktPlugin](https://github.com/StuxieDev/TraktPlugin) |
+| AnimeThemes | **In development.** Jellyfin plugin: anime openings and endings from animethemes.moe as theme songs and videos | — | [StuxieDev/AnimeThemesPlugin](https://github.com/StuxieDev/AnimeThemesPlugin) |
+| MyAnimeList | **In development.** Jellyfin plugin: MyAnimeList anime metadata, and watch status sync with MyAnimeList and other anime list sites | — | [StuxieDev/MyAnimeListPlugin](https://github.com/StuxieDev/MyAnimeListPlugin) |
 | Fix Blank Steam Icons | Restores blank Steam shortcut icons from Steam's CDN | — | [StuxieDev/Fix-Blank-Steam-Icons](https://github.com/StuxieDev/Fix-Blank-Steam-Icons) |
 | PokeFusion | **Archived in 09/2026.** Pokémon Infinite Fusion playground, discontinued because its upstream sprite assets were taken down | — | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
 | StuxCogs | **Archived in 09/2026.** Cogs for Red-DiscordBot, discontinued and no longer maintained | — | [StuxieDev/StuxCogs](https://github.com/StuxieDev/StuxCogs) |
 | git-scripts | Bash helpers for rewriting Git history | — | [StuxieDev/git-scripts](https://github.com/StuxieDev/git-scripts) |
 | CU Classification Calculator | Coventry University degree classification calculator | — | [StuxieDev/coventry-university-classification-calculator](https://github.com/StuxieDev/coventry-university-classification-calculator) |
 
-This table (and the matching cards on the site) is the source of truth for what's featured — update both together when a project is added, retired, or renamed.
+This table (and the matching cards on the site) is the source of truth for what's featured — update both together when a project is added, retired, or renamed. Keep it in step with the portfolio on [stuxie.dev](https://stuxie.dev/portfolio) (`data/portfolio.json` in StuxieDev/Website), which lists the same projects plus retired versions. A card with `data-state="development"` shows an **In development** badge.
 
 ## Local development
 

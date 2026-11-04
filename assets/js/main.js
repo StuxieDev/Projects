@@ -41,13 +41,14 @@
 
   // One badge per card, above the description. data-state holds the card's
   // declared state(s); the first that applies wins (discontinued, template,
-  // maintenance, soon). The HTML already renders it, so this only re-resolves
+  // maintenance, development, soon). The HTML already renders it, so this only re-resolves
   // a card with several states. With no state, the live status from
   // the status pages named by data-monitor="<slug>" or "<source>:<slug>" fill the badge,
   // and nothing is shown if it can't load.
   var STATES = [
     ["discontinued", "archived", "Discontinued"], ["template", "template", "Template"],
-    ["maintenance", "maintenance", "Maintenance"], ["soon", "soon", "Coming soon"]
+    ["maintenance", "maintenance", "Maintenance"], ["development", "building", "In development"],
+    ["soon", "soon", "Coming soon"]
   ];
   function stateOf(card) {
     var have = (card.getAttribute("data-state") || "").split(/\s+/);
