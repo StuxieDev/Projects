@@ -19,6 +19,14 @@ project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.
   - The four **Jellyfin plugins** show an In development badge, since they're pre-stable
   - The README's project table says the same, and notes the portfolio to keep it in step with
 
+### Fixed
+
+- **Project icons that didn't match the projects' own**:
+  - **TWRAR** uses its site's current icon (a browser window)
+  - **SNAIRK** uses its own icon (`public/brand/icon.svg` in its repo), on a black tile
+  - **Fix Blank Steam Icons** uses the icon tile from its repo's logo instead of a made-up one
+  - **StuxieDev Archives** and **Status** use the StuxieDev icon, as their sites do. `archives-icon.svg` and `status.svg` are removed
+
 ## v26.10.31
 
 ### Changed
