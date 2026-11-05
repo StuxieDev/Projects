@@ -21,6 +21,7 @@
 |---|---|---|---|
 | StuxieDev Website | **In development.** Version 2 of StuxieDev's home: portfolio, organisations, and links to everything else, fully custom PHP/CSS/JS (the old WordPress site is at [v1.stuxie.dev](https://v1.stuxie.dev)) | [stuxie.dev](https://stuxie.dev) | — |
 | StuxieDev Social | **In development.** StuxieDev's own Fediverse server (GoToSocial), home of @stuxiedev@stuxie.dev | [social.stuxie.dev](https://social.stuxie.dev) | — (private) |
+| StuxieDev Links | StuxieDev's one-screen links page: a tile for each place to find StuxieDev | [links.stuxie.dev](https://links.stuxie.dev) | — (private) |
 | RoboStux | All-in-one bot: moderation, utilities, fun, and automation | [robo.st](https://robo.st) | [RoboStux](https://github.com/RoboStux) (org) |
 | SNAIRK | Satirical parody of snarky AI chat products (no real AI) | [snairk.stuxie.dev](https://snairk.stuxie.dev) | [StuxieDev/SNAIRK](https://github.com/StuxieDev/SNAIRK) |
 | StuxieDev Archives | Archive of retired StuxieDev projects | [archives.stuxie.dev](https://archives.stuxie.dev) | — (private) |
