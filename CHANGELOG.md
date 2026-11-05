@@ -4,11 +4,13 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## v26.11.04
+## v26.11.05
 
 ### Added
 
 - A **StuxieDev Social** card (social.stuxie.dev, StuxieDev's own Fediverse server, home of @stuxiedev@stuxie.dev) in More projects, and its row in the README's project table
+- A **Stuxie.com** card in Discontinued, with its own icon and a link to its copy in the StuxieDev Archives, and its row
+  in the README's project table
 - An **In development** status badge with a code-brackets icon: give a card `data-state="development"`. It ranks after Maintenance and before Coming soon
 
 ### Changed

@@ -35,6 +35,7 @@
 | Fix Blank Steam Icons | Restores blank Steam shortcut icons from Steam's CDN | — | [StuxieDev/Fix-Blank-Steam-Icons](https://github.com/StuxieDev/Fix-Blank-Steam-Icons) |
 | PokeFusion | **Archived in 09/2026.** Pokémon Infinite Fusion playground, discontinued because its upstream sprite assets were taken down | — | [StuxieDev/pokefusion](https://github.com/StuxieDev/pokefusion) |
 | StuxCogs | **Archived in 09/2026.** Cogs for Red-DiscordBot, discontinued and no longer maintained | — | [StuxieDev/StuxCogs](https://github.com/StuxieDev/StuxCogs) |
+| Stuxie.com | **Discontinued in 2025.** Stuxie's old personal site; stuxie.com now goes to stuxie.dev | [archived](https://archives.stuxie.dev/2025/stuxie) | — |
 | git-scripts | Bash helpers for rewriting Git history | — | [StuxieDev/git-scripts](https://github.com/StuxieDev/git-scripts) |
 | CU Classification Calculator | Coventry University degree classification calculator | — | [StuxieDev/coventry-university-classification-calculator](https://github.com/StuxieDev/coventry-university-classification-calculator) |
 
