@@ -26,6 +26,9 @@ project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.
   - **SNAIRK** uses its own icon (`public/brand/icon.svg` in its repo), on a black tile
   - **Fix Blank Steam Icons** uses the icon tile from its repo's logo instead of a made-up one
   - **StuxieDev Archives** and **Status** use the StuxieDev icon, as their sites do. `archives-icon.svg` and `status.svg` are removed
+- **Icons that stayed dark in light mode**: the StuxieDev-style icons (CU Classification Calculator, git-scripts, PokeFusion,
+  StuxCogs, and the site's own `icon.svg` in the header) had a fixed near-black tile. It's now a soft tint of their pink
+  gradient, which suits both themes and follows the theme switch
 
 ## v26.10.31
 
