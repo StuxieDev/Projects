@@ -46,6 +46,15 @@ The projects list has four sections, in this order:
 
 All six live under `legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaimer`, `opt-out`), each its own folder with an `index.html`, linked from the hub at `legal/index.html`. Keep the six in sync with what the site actually does — if analytics or a form is ever added, the privacy/cookies pages need a real update, not a copy-paste from another project.
 
+## Branches and pull requests
+
+- `main` is what's live. Nothing is pushed to it directly: it only changes when a pull request is merged, and GitHub
+  protects it so that can't be skipped.
+- `test` is the working branch. Commit there (or on a branch off it) and push it; CI runs on every push and on every
+  pull request.
+- To release, follow the release steps on `test`, push `test` with its tag, and open a pull request from `test` into
+  `main`. When it's merged, GitHub Pages publishes it.
+
 ## Versioning
 
 This project uses [Date Versioning](https://datevers.ing). To release:

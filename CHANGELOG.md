@@ -4,6 +4,14 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.05-2
+
+### Changed
+
+- **A new branch flow**: work happens on `test`, `main` only changes through a pull request (GitHub protects it), and
+  merging into `main` is what publishes the site. CONTRIBUTING.md describes it.
+- CI runs on pushes to `test` too, not just `main`.
+
 ## v26.11.05-1
 
 ### Added
