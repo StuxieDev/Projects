@@ -4,6 +4,28 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06-9
+
+### Fixed
+
+- The header's icon is no longer clipped: its rounded corners cut off the corner of the badge, and the icon is already
+  round with a transparent background
+
+## v26.11.06-8
+
+### Changed
+
+- **The site uses stuxie.dev's bi theme:** its dark and light palettes, the bi-flag gradient (pink, purple, blue) on the
+  headline, the primary button and the "Projects" in the header, a pink, purple and blue glow behind the hero, and
+  stuxie.dev's fonts: IBM Plex Sans for body copy and JetBrains Mono for headings, self-hosted in `assets/fonts/`
+  with their licences
+- The StuxieDev Social icon's Fediverse badge has hollow nodes and solid white lines, like the other badges' white
+  line marks, instead of pink, purple and blue dots
+
+### Removed
+
+- The Lato and Poppins font files, no longer used
+
 ## v26.11.06-7
 
 ### Added
