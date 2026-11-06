@@ -4,6 +4,18 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06-4
+
+### Changed
+
+- **This site's own icon is now the StuxieDev Projects badge icon**: the StuxieDev avatar with the `<•>` badge, as on
+  the StuxieDev Status and Archives icons. It replaces the pink line-drawn `<•>` tile in the header, the favicon, the
+  home-screen and app icons, and the README logo.
+- **CU Classification Calculator, git-scripts, PokeFusion and StuxCogs have their own icons**, instead of all sharing
+  the same pink line-drawn tile: a calculator in a graduation cap on teal and blue, a terminal prompt with a branch on
+  git orange, two orbs fusing on yellow and purple, and a pair of cogs on red. Only the StuxieDev projects use the
+  avatar-and-badge style.
+
 ## v26.11.06-3
 
 ### Added
