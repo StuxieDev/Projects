@@ -100,6 +100,17 @@
     var m = monitorOf(card);
     if (SOURCES[m.source]) wanted[m.source] = true;
   });
+  // The hero's eyebrow as a live status badge: data-status-eyebrow="<source>:*" (the whole status page) or
+  // "<source>:<slug>" (one monitor). It keeps its own text and gets a state after it, a status colour and a dot.
+  function eyebrowOf(el) {
+    var v = el.getAttribute("data-status-eyebrow") || "";
+    var i = v.indexOf(":");
+    return i < 0 ? { source: "stuxiedev", slug: v } : { source: v.slice(0, i), slug: v.slice(i + 1) };
+  }
+  document.querySelectorAll("[data-status-eyebrow]").forEach(function (el) {
+    var m = eyebrowOf(el);
+    if (SOURCES[m.source]) wanted[m.source] = true;
+  });
   Object.keys(wanted).forEach(function (source) {
     fetch(SOURCES[source].url + "?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -117,6 +128,20 @@
           badge.textContent = whole ? WHOLE[m.status] : PILL[m.status];
           badge.title = "Live from " + SOURCES[source].site;
           badge.hidden = false;
+        });
+        document.querySelectorAll("[data-status-eyebrow]").forEach(function (el) {
+          var want = eyebrowOf(el);
+          if (want.source !== source) return;
+          var whole = want.slug === "*";
+          var m = whole ? { status: summary.status } : bySlug[want.slug];
+          var text = m && (whole ? WHOLE[m.status] : PILL[m.status]);
+          var state = el.querySelector(".eyebrow-state");
+          if (!text || !state) return;
+          el.classList.remove("up", "degraded", "down");
+          el.classList.add(m.status === "partial" ? "degraded" : m.status);
+          state.textContent = text;
+          state.hidden = false;
+          el.title = "Live from " + SOURCES[source].site;
         });
       })
       .catch(function () {});

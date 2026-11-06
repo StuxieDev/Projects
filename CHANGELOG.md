@@ -4,6 +4,14 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06-10
+
+### Changed
+
+- **The hero's eyebrow is a live status badge:** it keeps the eyebrow's size and shape, but takes a status badge's
+  colour (green, amber or red) and pulsing dot from StuxieDev Status, reads "StuxieDev · All operational" (or Degraded,
+  Partial outage, Major outage), and links to status.stuxie.dev. If the status can't load, it stays a plain eyebrow
+
 ## v26.11.06-9
 
 ### Fixed
