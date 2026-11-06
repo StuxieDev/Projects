@@ -1,78 +1,34 @@
 /* StuxieDev Projects — shared stylesheet
-   Palette follows stuxie.dev: purple #9b4f96 primary, pink #d60270 highlight; dark by default,
-   light with the system preference or <html data-theme="light">. Poppins for headings, Lato for body copy. */
+   The bi theme from stuxie.dev (StuxieDev/Website, public/static/css/site.css): its palette, the bi-flag gradient
+   (pink, purple, blue) for highlights, IBM Plex Sans for body copy and JetBrains Mono for headings. Dark by
+   default, light with the system preference or <html data-theme="light">. */
 
-/* Self-hosted (SIL Open Font License), latin subset only, so the site makes
-   no third-party requests. See assets/fonts/. */
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/assets/fonts/lato-400-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/assets/fonts/lato-700-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/assets/fonts/poppins-500-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("/assets/fonts/poppins-600-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/assets/fonts/poppins-700-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("/assets/fonts/poppins-800-latin.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* Self-hosted variable fonts (SIL Open Font License, see assets/fonts/OFL-*.txt), so the site makes no
+   third-party requests. The same files stuxie.dev serves. */
+@font-face { font-family: "JetBrains Mono"; src: url("/assets/fonts/jetbrains-mono.woff2") format("woff2"); font-weight: 100 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "IBM Plex Sans"; src: url("/assets/fonts/ibm-plex-sans.woff2") format("woff2"); font-weight: 100 700; font-style: normal; font-display: swap; }
 
 :root {
   color-scheme: dark;
-  --bg: #0f0d12;
-  --bg-raised: #17141b;
-  --bg-card: #1a161e;
-  --bg-card-hover: #201b25;
-  --border: #2c2533;
-  --border-strong: #3d3346;
-  --text: #f1ecf3;
-  --text-muted: #b3a9b8;
-  --text-faint: #7d7383;
+  --bg: #120915;
+  --bg-raised: #190d1e;
+  --bg-card: #1e1124;
+  --bg-card-hover: #28172f;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #f7eff8;
+  --text-muted: #bea7c2;
+  --text-faint: #8f7a94;
   --accent: #9b4f96;
   --accent-rgb: 155, 79, 150;
-  --accent-bright: #c77dc1;
+  --accent-bright: #d382cd;
   --accent-pink: #d60270;
   --accent-pink-rgb: 214, 2, 112;
-  --accent-soft: rgba(155, 79, 150, 0.14);
-  --accent-grad: linear-gradient(135deg, #b565ae 0%, #d60270 100%);
+  --accent-blue-rgb: 63, 109, 240;
+  --accent-soft: rgba(155, 79, 150, 0.16);
+  --accent-grad: linear-gradient(100deg, #e0157e 0%, #b45cae 50%, #3f6df0 100%);
   --link-hover: #e6a8e0;
-  --header-bg: rgba(15, 13, 18, 0.8);
+  --header-bg: rgba(18, 9, 21, 0.8);
   --ghost-bg: rgba(255, 255, 255, 0.02);
   --ok: #34d399; --ok-rgb: 52, 211, 153;
   --warn: #f0b429; --warn-rgb: 240, 180, 41;
@@ -83,32 +39,32 @@
   --off: #a8a2ad; --off-rgb: 156, 160, 172;
   --radius: 16px;
   --container: 1120px;
-  --font-sans: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: "Poppins", var(--font-sans);
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
     color-scheme: light;
-    --bg: #faf7fb;
-    --bg-raised: #f2ebf4;
+    --bg: #fbf7fc;
+    --bg-raised: #f4ecf6;
     --bg-card: #ffffff;
-    --bg-card-hover: #f8f2f9;
-    --border: #ebe1ee;
-    --border-strong: #d8c8de;
-    --text: #1f1424;
-    --text-muted: #5c4d63;
-    --text-faint: #6e6075;
-    --accent: #84397f;
-    --accent-rgb: 132, 57, 127;
-    --accent-bright: #84397f;
+    --bg-card-hover: #f6eff8;
+    --border: rgba(40, 10, 45, 0.1);
+    --border-strong: rgba(40, 10, 45, 0.2);
+    --text: #1e0f22;
+    --text-muted: #634f68;
+    --text-faint: #6e5b73;
+    --accent: #8b3d85;
+    --accent-rgb: 139, 61, 133;
+    --accent-bright: #8b3d85;
     --accent-pink: #b0025c;
     --accent-pink-rgb: 176, 2, 92;
-    --accent-soft: rgba(132, 57, 127, 0.1);
-    --accent-grad: linear-gradient(135deg, #9a4894 0%, #b0025c 100%);
+    --accent-soft: rgba(139, 61, 133, 0.1);
+    --accent-grad: linear-gradient(100deg, #e0157e 0%, #b45cae 50%, #3f6df0 100%);
     --link-hover: #b0025c;
-    --header-bg: rgba(250, 247, 251, 0.84);
+    --header-bg: rgba(251, 247, 252, 0.84);
     --ghost-bg: rgba(0, 0, 0, 0.02);
     --ok: #0f7a55; --ok-rgb: 15, 122, 85;
     --warn: #9a6a00; --warn-rgb: 154, 106, 0;
@@ -121,24 +77,24 @@
 }
 :root[data-theme="light"] {
   color-scheme: light;
-  --bg: #faf7fb;
-  --bg-raised: #f2ebf4;
+  --bg: #fbf7fc;
+  --bg-raised: #f4ecf6;
   --bg-card: #ffffff;
-  --bg-card-hover: #f8f2f9;
-  --border: #ebe1ee;
-  --border-strong: #d8c8de;
-  --text: #1f1424;
-  --text-muted: #5c4d63;
-  --text-faint: #6e6075;
-  --accent: #84397f;
-  --accent-rgb: 132, 57, 127;
-  --accent-bright: #84397f;
+  --bg-card-hover: #f6eff8;
+  --border: rgba(40, 10, 45, 0.1);
+  --border-strong: rgba(40, 10, 45, 0.2);
+  --text: #1e0f22;
+  --text-muted: #634f68;
+  --text-faint: #6e5b73;
+  --accent: #8b3d85;
+  --accent-rgb: 139, 61, 133;
+  --accent-bright: #8b3d85;
   --accent-pink: #b0025c;
   --accent-pink-rgb: 176, 2, 92;
-  --accent-soft: rgba(132, 57, 127, 0.1);
-  --accent-grad: linear-gradient(135deg, #9a4894 0%, #b0025c 100%);
+  --accent-soft: rgba(139, 61, 133, 0.1);
+  --accent-grad: linear-gradient(100deg, #e0157e 0%, #b45cae 50%, #3f6df0 100%);
   --link-hover: #b0025c;
-  --header-bg: rgba(250, 247, 251, 0.84);
+  --header-bg: rgba(251, 247, 252, 0.84);
   --ghost-bg: rgba(0, 0, 0, 0.02);
   --ok: #0f7a55; --ok-rgb: 15, 122, 85;
   --warn: #9a6a00; --warn-rgb: 154, 106, 0;
@@ -164,6 +120,7 @@ body {
 }
 
 h1, h2, h3, .brand, .btn { font-family: var(--font-display); }
+h1, h2, h3 { letter-spacing: -0.03em; }
 
 img { max-width: 100%; display: block; }
 
@@ -217,7 +174,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.01em;
 }
 .brand img { width: 34px; height: 34px; border-radius: 10px; }
-.brand .brand-sub { color: var(--accent-bright); font-weight: 500; }
+.brand .brand-sub { font-weight: 600; background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
 .nav-links {
   display: flex;
@@ -258,8 +215,9 @@ a { color: inherit; text-decoration: none; }
   inset: -120px 0 0;
   z-index: -1;
   background:
-    radial-gradient(600px 320px at 30% 20%, rgba(var(--accent-rgb), 0.28), transparent 70%),
-    radial-gradient(520px 300px at 72% 35%, rgba(var(--accent-pink-rgb), 0.16), transparent 70%);
+    radial-gradient(560px 300px at 24% 18%, rgba(var(--accent-pink-rgb), 0.2), transparent 70%),
+    radial-gradient(600px 320px at 50% 30%, rgba(var(--accent-rgb), 0.22), transparent 70%),
+    radial-gradient(560px 300px at 78% 38%, rgba(var(--accent-blue-rgb), 0.16), transparent 70%);
   pointer-events: none;
 }
 .hero .eyebrow {
@@ -279,7 +237,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(2.1rem, 5.5vw, 3.6rem);
   font-weight: 800;
   line-height: 1.12;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   margin: 0 0 18px;
 }
 .grad {
