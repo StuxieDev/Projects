@@ -66,6 +66,7 @@ This project uses [Date Versioning](https://datevers.ing). To release:
 
 ## Before committing
 
-- Open changed pages in a browser via `./dev-server.sh` and click through — this project has no automated test suite, so a live check is the only real verification
+- Run `node tests/site.test.js` (favicons, embeds, icon files and the changelog renderer) and `bash tests/version.sh`; CI runs both, along with its HTML and local link checks
+- Open changed pages in a browser via `./dev-server.sh` and click through: the tests don't cover layout or content, so a live check is still the real verification
 - Check both the dev-mode banner (default) and `--no-dev-mode` behave as expected if you touched `dev-server.js` or `assets/js/dev-mode.js`
 - Only link a repository if it is public: no "Repository" link on a card for a private or missing repo. Run `scripts/check-repo-links.sh` (needs `gh`) to list linked repos that are not public

@@ -75,3 +75,7 @@ jobs:
             echo "::error::CHANGELOG.md has no release heading for $V"; exit 1
           fi
           echo "VERSION.md ($V) has a matching CHANGELOG.md entry"
+      - name: Date Version checks
+        run: bash tests/version.sh
+      - name: Site checks
+        run: node tests/site.test.js
