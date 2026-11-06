@@ -4,6 +4,36 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.06-3
+
+### Added
+
+- **An avatar-and-badge icon for StuxieDev Status**, with a heartbeat line, in place of the plain StuxieDev avatar.
+
+## v26.11.06-2
+
+### Added
+
+- **The same avatar-and-badge icon style for StuxieDev Projects and StuxieDev Archives**: `<•>` (this site's own
+  mark) for Projects, used by the stuxie.dev portfolio, and an archive box for the Archives card, which had been
+  borrowing the plain StuxieDev avatar.
+
+## v26.11.06-1
+
+### Changed
+
+- **StuxieDev Social's and StuxieDev Links' icons are now the StuxieDev avatar with a badge**: the Fediverse mark for
+  Social and a chain link for Links, in a bi-flag ring. The line-drawing icons from v26.11.06 stay in
+  `assets/img/projects/` (`stuxiedev-social.svg`, `stuxiedev-links.svg`) as a backup.
+
+## v26.11.06
+
+### Added
+
+- **Their own icons for StuxieDev Social and StuxieDev Links**, in the house style of the other StuxieDev icons (a
+  softly tinted tile with a pink gradient line drawing): the Fediverse mark for Social and a chain link for Links.
+  They had been borrowing the StuxieDev avatar.
+
 ## v26.11.05-2
 
 ### Changed
