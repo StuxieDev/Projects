@@ -25,7 +25,7 @@
 | RoboStux | All-in-one bot: moderation, utilities, fun, and automation | [robo.st](https://robo.st) | [RoboStux](https://github.com/RoboStux) (org) |
 | SNAIRK | Satirical parody of snarky AI chat products (no real AI) | [snairk.stuxie.dev](https://snairk.stuxie.dev) | [StuxieDev/SNAIRK](https://github.com/StuxieDev/SNAIRK) |
 | StuxieDev Archives | Archive of retired StuxieDev projects | [archives.stuxie.dev](https://archives.stuxie.dev) | — (private) |
-| Status | Live status of StuxieDev's websites and projects, powered by GitHup | [status.stuxie.dev](https://status.stuxie.dev) | [StuxieDev/Status](https://github.com/StuxieDev/Status) |
+| StuxieDev Status | Live status of StuxieDev's websites and projects, powered by GitHup | [status.stuxie.dev](https://status.stuxie.dev) | [StuxieDev/Status](https://github.com/StuxieDev/Status) |
 | TIGHC | The Intiface Game Haptics Controller | [tighc.stuxie.dev](https://tighc.stuxie.dev) | [TIGHC/Engine](https://github.com/TIGHC/Engine) |
 | TS4RLS | The Sims 4 Random Loading Screen | [ts4rls.stuxie.dev](https://ts4rls.stuxie.dev) | [TS4RLS/Engine](https://github.com/TS4RLS/Engine) |
 | TWRAR | The Website Recorder And Replayer | [twrar.stuxie.dev](https://twrar.stuxie.dev) | [TWRAR/Engine](https://github.com/TWRAR/Engine) |
