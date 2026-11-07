@@ -101,7 +101,8 @@
     if (SOURCES[m.source]) wanted[m.source] = true;
   });
   // The hero's eyebrow as a live status badge: data-status-eyebrow="<source>:*" (the whole status page) or
-  // "<source>:<slug>" (one monitor). It keeps its own text and gets a state after it, a status colour and a dot.
+  // "<source>:<slug>" (one monitor). Once the status loads, it shows only the state (no brand name), in a status
+  // colour with a dot; until then, or if it can't load, it keeps its own text.
   function eyebrowOf(el) {
     var v = el.getAttribute("data-status-eyebrow") || "";
     var i = v.indexOf(":");
@@ -136,11 +137,13 @@
           var m = whole ? { status: summary.status } : bySlug[want.slug];
           var text = m && (whole ? WHOLE[m.status] : PILL[m.status]);
           var state = el.querySelector(".eyebrow-state");
+          var label = el.querySelector(".eyebrow-label");
           if (!text || !state) return;
           el.classList.remove("up", "degraded", "down");
           el.classList.add(m.status === "partial" ? "degraded" : m.status);
           state.textContent = text;
           state.hidden = false;
+          if (label) label.hidden = true;
           el.title = "Live from " + SOURCES[source].site;
         });
       })
