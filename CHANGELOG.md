@@ -4,6 +4,13 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.07-3
+
+### Changed
+
+- **The StuxieDev Website is no longer in development:** it reached its first stable release and launched, so its
+  card drops the "In development" badge and shows its live status from status.stuxie.dev, like the other live projects
+
 ## v26.11.07-2
 
 ### Fixed
