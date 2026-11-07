@@ -4,6 +4,13 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.07-2
+
+### Fixed
+
+- **The SNAIRK icon's border was cut off at the corners:** its tile was less rounded than the page rounds project icons,
+  so the corners clipped its green edge. It's now rounded to match, like the other tile icons
+
 ## v26.11.07-1
 
 ### Fixed
