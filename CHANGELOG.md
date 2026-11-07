@@ -4,6 +4,20 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.07-4
+
+### Added
+
+- **Bi Kat:** a card for [kat.stuxie.dev](https://kat.stuxie.dev), the pixel kat from stuxie.dev that follows your
+  pointer, now for any site. It links to the site, the script and the userscript, and covers the kat picker (in
+  stuxie.dev's footer, on kat.stuxie.dev and in the userscript's menu) and the oneko spritesheets. Its icon is the bi
+  kat itself, sitting, drawn from its own pixel art
+
+### Changed
+
+- The project counts include it (13 in the header, 17 in the Discord embed), and the README no longer lists the
+  StuxieDev Website as in development
+
 ## v26.11.07-3
 
 ### Changed
