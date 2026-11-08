@@ -11,13 +11,14 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <!-- Discord: a custom link preview. -->
-  <script id="discord:component-embed" type="application/json">{"component":{"type":17,"accent_color":10178454,"components":[{"type":9,"components":[{"type":10,"content":"# [StuxieDev Projects](https://projects.stuxie.dev/)\n**Tools, mods, and utilities by StuxieDev.**\n16 projects: game mods, automation tools, Jellyfin plugins and the odd web app. No accounts, no upsells."}],"accessory":{"type":11,"media":{"url":"https://projects.stuxie.dev/assets/img/icon-512.png"}}},{"type":14},{"type":10,"content":"### Featured\nStuxieDev Website · RoboStux · SNAIRK"},{"type":1,"components":[{"type":2,"style":5,"label":"Browse projects","url":"https://projects.stuxie.dev/#projects"},{"type":2,"style":5,"label":"GitHub","url":"https://github.com/StuxieDev"},{"type":2,"style":5,"label":"Website","url":"https://stuxie.dev"}]}]}}</script>
+  <script id="discord:component-embed" type="application/json">{"component":{"type":17,"accent_color":10178454,"components":[{"type":9,"components":[{"type":10,"content":"# [StuxieDev Projects](https://projects.stuxie.dev/)\n**Tools, mods, and utilities by StuxieDev.**\n17 projects: game mods, automation tools, Jellyfin plugins and the odd web app. No accounts, no upsells."}],"accessory":{"type":11,"media":{"url":"https://projects.stuxie.dev/assets/img/icon-512.png"}}},{"type":14},{"type":10,"content":"### Featured\nStuxieDev Website · RoboStux · SNAIRK"},{"type":1,"components":[{"type":2,"style":5,"label":"Browse projects","url":"https://projects.stuxie.dev/#projects"},{"type":2,"style":5,"label":"GitHub","url":"https://github.com/StuxieDev"},{"type":2,"style":5,"label":"Website","url":"https://stuxie.dev"}]}]}}</script>
   <script>(function(){try{var t=localStorage.getItem("stuxiedev-projects-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/site-banner.css">
   <link rel="stylesheet" href="/assets/css/brand-footer.css">
   <script src="/assets/js/dev-mode.js"></script>
   <script src="https://seasonaloverlayslibrary.stuxapis.net/seasonal-overlays-library.js" defer></script>
+  <script src="https://kat.stuxie.dev/kat.js" defer></script>
 </head>
 <body>
 
@@ -49,7 +50,7 @@
       </div>
       <p class="season-note">Seasonal overlays by <a href="https://seasonaloverlayslibrary.stuxapis.net" target="_blank" rel="noopener">SeasonalOverlaysLibrary</a> from StuxAPIs.</p>
       <div class="hero-stats">
-        <div><strong class="grad">12</strong><span>projects</span></div>
+        <div><strong class="grad">13</strong><span>projects</span></div>
         <div><strong class="grad">0</strong><span>trackers</span></div>
         <div><strong class="grad">0</strong><span>accounts needed</span></div>
       </div>
@@ -66,7 +67,7 @@
       <h3 class="subhead">Featured</h3>
       <div class="project-grid">
 
-        <article data-monitor="stuxiedev" data-state="development" class="project-card featured">
+        <article data-monitor="stuxiedev" class="project-card featured">
           <div class="project-top">
             <img class="project-icon" src="/assets/img/projects/stuxiedev-icon.png" width="64" height="64" alt="StuxieDev Website icon" loading="lazy">
             <div>
@@ -74,7 +75,7 @@
               <div class="project-tagline">A Bi Kat Who is Always Developing!</div>
             </div>
           </div>
-          <span class="badge-status building"><i class="badge-ico" aria-hidden="true"></i>In development</span>
+          <span class="badge-status live" hidden></span>
           <p class="desc">Version 2 of stuxie.dev, the home of StuxieDev: the portfolio, the organisations and every way to get in touch. Fully custom PHP, CSS and JavaScript with no framework, and portfolio screenshots that refresh themselves every day. It replaces the original WordPress site, now at <a href="https://v1.stuxie.dev" target="_blank" rel="noopener">v1.stuxie.dev</a>.</p>
           <div class="stack">
             <span class="pill">PHP</span>
@@ -167,6 +168,27 @@
           </div>
           <div class="project-links">
             <a href="https://links.stuxie.dev" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <img class="project-icon" src="/assets/img/projects/bi-kat.svg" width="56" height="56" alt="Bi Kat icon" loading="lazy">
+            <div>
+              <h3>Bi Kat</h3>
+              <div class="project-tagline">A little pixel kat that follows your pointer, on any site</div>
+            </div>
+          </div>
+          <p class="desc">The pixel kat from stuxie.dev that runs after your pointer, sits down when it catches up and naps if you leave it be, now for any site, like oneko. One script tag puts it on yours, and a userscript brings it to every site you visit. Pick the bi kat or one of the Ridgwell cats (Olly, Lily, Poppy or Dougal) with the kat picker, in stuxie.dev&rsquo;s footer, on kat.stuxie.dev or in the userscript&rsquo;s menu. There are oneko spritesheets of all five too. Original pixel art, with no images and no tracking.</p>
+          <div class="stack">
+            <span class="pill">JavaScript</span>
+            <span class="pill">Userscript</span>
+            <span class="pill">Pixel art</span>
+          </div>
+          <div class="project-links">
+            <a href="https://kat.stuxie.dev" target="_blank" rel="noopener">Website</a>
+            <a href="https://kat.stuxie.dev/kat.js" target="_blank" rel="noopener">Script</a>
+            <a href="https://kat.stuxie.dev/kat.user.js" target="_blank" rel="noopener">Userscript</a>
           </div>
         </article>
 
@@ -518,6 +540,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-copy"><span><svg class="copyright-glyph" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><title>Copyright</title><circle cx="8" cy="8" r="6.9" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10.4 6.1a3 3 0 1 0 0 3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><span class="brand-sr-only">Copyright</span> <span data-year data-year-start="2026"></span> StuxieDev. All rights reserved.</span></div>
+      <p class="kat-picker" data-kat-picker-wrap hidden><label for="kat-picker">Your kat</label><select id="kat-picker" data-kat-picker><option value="bikat">Bi kat</option><option value="olly">Olly</option><option value="lily" title="In loving memory">Lily ✦</option><option value="poppy">Poppy</option><option value="dougal" title="In loving memory">Dougal ✦</option><option value="none">None</option></select></p>
       <div class="footer-links">
         <a href="/legal/">Boring Legal Stuff</a>
         <a href="/sitemap/">Sitemap</a>

@@ -593,6 +593,17 @@ a { color: inherit; text-decoration: none; }
 /* Footer: the StuxieDev icon beside the copyright line. */
 .footer-copy { display: inline-flex; align-items: center; gap: 10px; }
 
+/* Footer: "Your kat", the switcher for kat.stuxie.dev's pixel kat (kat.js wires it up and shows it). */
+.kat-picker { display: inline-flex; align-items: center; gap: 8px; margin: 0; }
+.kat-picker[hidden] { display: none; }
+.kat-picker select {
+  font: inherit; font-size: 0.8rem; color: var(--text); background-color: var(--bg-card);
+  border: 1px solid var(--border-strong); border-radius: 999px; padding: 4px 26px 4px 12px; appearance: none; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, var(--text-muted) 50%), linear-gradient(135deg, var(--text-muted) 50%, transparent 50%);
+  background-position: calc(100% - 14px) 55%, calc(100% - 9px) 55%; background-size: 5px 5px; background-repeat: no-repeat;
+}
+.kat-picker select:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 2px; }
+
 /* One status badge per card, above the description. Precedence (first wins):
    discontinued, template, maintenance, development, soon, then the live status from main.js. */
 .project-card > .badge-status { align-self: flex-start; margin-left: 0; }
