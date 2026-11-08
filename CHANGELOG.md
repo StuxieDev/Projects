@@ -4,6 +4,13 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.08
+
+### Changed
+
+- The StuxieDev Status card says its sites are "checked regularly", not "every 5 minutes": GitHub runs the
+  status checks' 5-minute schedule best-effort, often less often, and the status page now shows the real rhythm
+
 ## v26.11.07-5
 
 ### Added
