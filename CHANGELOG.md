@@ -4,6 +4,14 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.12
+
+### Added
+
+- **Fluxer Music** ([fluxer.music](https://fluxer.music)), in development: the website of a community on Fluxer for
+  musicians, producers and everyone else who makes music, run with Ziad Agamy. It has its own card under "More
+  projects", with its own icon (`assets/img/projects/fluxer-music-icon.png`)
+
 ## v26.11.10
 
 ### Changed
