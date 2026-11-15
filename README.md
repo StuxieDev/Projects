@@ -48,13 +48,16 @@ This table (and the matching cards on the site) is the source of truth for what'
 ```
 ./dev-server.sh          # http://127.0.0.1:8080, DEV_MODE forced on
 ./dev-server.sh 3000 --no-dev-mode
+./dev-server.sh --lan    # also open it from a phone on your local network
 ```
 
-On Windows, use `dev-server.bat` instead. No `npm install` needed — the dev server is a single dependency-free Node script (`dev-server.js`); Node just needs to be installed. See [CONTRIBUTING.md](CONTRIBUTING.md) for more.
+On Windows, use `dev-server.bat` instead. No `npm install` needed — the dev server is a single dependency-free Node script (`dev-server.js`); Node just needs to be installed. Pass `--lan` to open it on a phone or another device on your local network: the server then listens on every interface instead of 127.0.0.1 only, and prints the addresses to open (usually the 192.168.x.x one; allow Node through the firewall if asked). See [CONTRIBUTING.md](CONTRIBUTING.md) for more.
 
 ## Versioning
 
 This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
+
+Work and releases happen on the `test` branch. Changes reach `staging` and then `main` (live) only through pull requests: `test` → `staging` → `main`. See [CONTRIBUTING.md](CONTRIBUTING.md) for the release steps.
 
 ## License
 
