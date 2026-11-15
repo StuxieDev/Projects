@@ -57,6 +57,8 @@ On Windows, use `dev-server.bat` instead. No `npm install` needed — the dev se
 
 This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release.
 
+Work and releases happen on the `test` branch. Changes reach `staging` and then `main` (live) only through pull requests: `test` → `staging` → `main`. See [CONTRIBUTING.md](CONTRIBUTING.md) for the release steps.
+
 ## License
 
 &copy; 2026 StuxieDev. All rights reserved. This repository is not licensed for reuse or redistribution.
