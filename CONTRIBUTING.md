@@ -16,7 +16,7 @@ cd Projects
 ./dev-server.sh
 ```
 
-No install step — there's no `package.json`, no dependencies, nothing to build. `dev-server.js` is a single dependency-free Node script; the only requirement is having Node itself installed. Pass `--no-dev-mode` to test the site as it behaves in production (no dev banner).
+No install step — there's no `package.json`, no dependencies, nothing to build. `dev-server.js` is a single dependency-free Node script; the only requirement is having Node itself installed. Pass `--no-dev-mode` to test the site as it behaves in production (no dev banner). Pass `--lan` to open it on a phone or another device on your local network: the server then listens on every interface instead of 127.0.0.1 only, and prints the addresses to open (usually the 192.168.x.x one; allow Node through the firewall if asked).
 
 ## Project conventions
 
