@@ -4,6 +4,26 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.15-1
+
+### Changed
+
+- **A `staging` branch between `test` and `main`.** Changes now go live in two steps, through pull requests: `test` →
+  `staging`, then `staging` → `main`. Nothing is pushed to `staging` or `main` directly. GitHub Pages still publishes
+  only from `main`, and CI now runs on `staging` too. CONTRIBUTING.md has a new "Branches and going live" section, and
+  the README's Versioning section says how releases move.
+- **`commit.sh` and `commit.bat` refuse to run on `staging` or `main`**, since releases are made on `test`. After
+  tagging, they print the push command and the two `gh pr create` commands for going live.
+
+## v26.11.15
+
+### Added
+
+- **`--lan` for the dev server**: `./dev-server.sh --lan` (or `dev-server.bat --lan`) listens on every network
+  interface instead of 127.0.0.1 only, so a phone or another device on the same network can open the local copy. It
+  prints the addresses to open, one per IPv4 address of the machine (usually the 192.168.x.x one), and a reminder to
+  let Node through the firewall if asked. Without it, the server stays on 127.0.0.1.
+
 ## v26.11.12
 
 ### Added

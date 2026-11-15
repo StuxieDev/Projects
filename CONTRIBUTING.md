@@ -16,7 +16,7 @@ cd Projects
 ./dev-server.sh
 ```
 
-No install step — there's no `package.json`, no dependencies, nothing to build. `dev-server.js` is a single dependency-free Node script; the only requirement is having Node itself installed. Pass `--no-dev-mode` to test the site as it behaves in production (no dev banner).
+No install step — there's no `package.json`, no dependencies, nothing to build. `dev-server.js` is a single dependency-free Node script; the only requirement is having Node itself installed. Pass `--no-dev-mode` to test the site as it behaves in production (no dev banner). Pass `--lan` to open it on a phone or another device on your local network: the server then listens on every interface instead of 127.0.0.1 only, and prints the addresses to open (usually the 192.168.x.x one; allow Node through the firewall if asked).
 
 ## Project conventions
 
@@ -47,14 +47,18 @@ The projects list has four sections, in this order:
 
 All six live under `legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaimer`, `opt-out`), each its own folder with an `index.html`, linked from the hub at `legal/index.html`. Keep the six in sync with what the site actually does — if analytics or a form is ever added, the privacy/cookies pages need a real update, not a copy-paste from another project.
 
-## Branches and pull requests
+## Branches and going live
 
-- `main` is what's live. Nothing is pushed to it directly: it only changes when a pull request is merged, and GitHub
-  protects it so that can't be skipped.
-- `test` is the working branch. Commit there (or on a branch off it) and push it; CI runs on every push and on every
-  pull request.
-- To release, follow the release steps on `test`, push `test` with its tag, and open a pull request from `test` into
-  `main`. When it's merged, GitHub Pages publishes it.
+- **`main` is what's live.** Nothing is pushed to it directly: it only changes when a pull request from `staging` is
+  merged, and GitHub protects it so that can't be skipped. Merging into it publishes projects.stuxie.dev on GitHub
+  Pages.
+- **`staging` is the last check before live.** Nothing is pushed to it directly either: it only changes when a pull
+  request from `test` is merged.
+- **Work happens on `test`**, or on a branch off `test` that's merged back into it. CI runs on every push and on every
+  pull request. Releases are made on `test` too: `commit.sh` / `commit.bat` refuse to run on `staging` or `main`.
+- **Going live:** push `test` with its tag, open a pull request into staging (`gh pr create --base staging --head
+  test`), check staging once it's merged, then open one from staging into main (`gh pr create --base main --head
+  staging`). The commit script prints these commands after tagging.
 
 ## Versioning
 
@@ -64,6 +68,8 @@ This project uses [Date Versioning](https://datevers.ing). To release:
 2. Set `VERSION.md` to the same bare version (no `v`): today's **UTC** date as `YY.MM.DD`, or `YY.MM.DD-1`, `-2`… for later releases the same UTC day. Never a future date. Use UTC, not local time: just after midnight in the UK it is still the previous day in UTC.
 3. Run `bash tests/version.sh`.
 4. Run `./commit.sh` (or `commit.bat` on Windows). It checks the version, commits and tags `vYY.MM.DD`, and never pushes.
+5. `git push origin test --tags`, then open a pull request from `test` into `staging`, and once staging is checked one
+   from `staging` into `main` (see Branches and going live).
 
 ## Before committing
 
