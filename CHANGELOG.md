@@ -4,6 +4,13 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.22-1
+
+### Added
+
+- **StuxieDev Website v1 in Discontinued**: the original WordPress stuxie.dev (2016–2026), replaced by the fully
+  custom stuxie.dev and kept as it was at v1.stuxie.dev and in the StuxieDev Archives.
+
 ## v26.11.22
 
 ### Changed
