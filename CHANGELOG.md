@@ -4,6 +4,17 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.22
+
+### Changed
+
+- **Fluxer Music is live.** Its card drops the "In development" badge and shows fluxer.music's live status from
+  status.stuxie.dev instead (monitor `fluxer-music`), like the other live projects.
+
+### Fixed
+
+- **Fluxer Music is in the README's project table**, which it was missing from.
+
 ## v26.11.21
 
 ### Changed
