@@ -4,6 +4,14 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.26-3
+
+### Added
+
+- **Fluxer.Life, in development**: an unofficial fan project for the Fluxer chat app, a joke life-status page with four
+  silly needs to keep topped up, at fluxer.life (coming soon for now). Its card has the "In development" badge, and
+  it's in the README's project table.
+
 ## v26.11.26-2
 
 ### Fixed
