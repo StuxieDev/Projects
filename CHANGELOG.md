@@ -4,6 +4,17 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.26-4
+
+### Fixed
+
+- **Deploys to GitHub Pages work again, and only publish the site.** The repo's Pages source is now "GitHub Actions",
+  so GitHub no longer also publishes the whole `main` branch alongside this workflow. The workflow moves to the
+  current Pages actions (`configure-pages@v6`, `upload-pages-artifact@v5`, `deploy-pages@v5`): with `deploy-pages@v4`
+  the deploy couldn't find its own upload. `upload-pages-artifact` never had an `exclude_assets` option, so the
+  exclusions were ignored and `commit.sh`, `README.md` and `CONTRIBUTING.md` were public; the workflow now copies just
+  the site into `_site` first (keeping `CHANGELOG.md` and `VERSION.md`, which the changelog page and footer read).
+
 ## v26.11.26-3
 
 ### Added
