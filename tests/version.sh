@@ -25,11 +25,19 @@ not_future()   { [[ ! "${VERSION%%-*}" > "$(date -u +%y.%m.%d)" ]]; }
 changelog_leads() {
     [ "$(grep -m1 -oE '^## v[^[:space:]]+' "$ROOT/CHANGELOG.md" | sed 's/^## v//')" = "$VERSION" ]
 }
+# Every page's /assets/ stylesheets and scripts carry ?v=<this version>, so a release never pairs new HTML with a
+# stylesheet the browser still has cached from the last one.
+assets_current() {
+    local stale
+    stale="$(grep -rhoE '"/assets/(css|js)/[^"]+\.(css|js)[^"]*"' --include=*.html "$ROOT" | grep -v "?v=$VERSION\"\$")"
+    [ -z "$stale" ] || { echo "$stale" | sort -u | sed 's/^/       stale: /'; return 1; }
+}
 
 check "VERSION.md ($VERSION) is a Date Version (YY.MM.DD or YY.MM.DD-N)" is_datever
 check "VERSION.md ($VERSION) is a real calendar date" is_real_date
 check "VERSION.md ($VERSION) isn't dated in the future (UTC)" not_future
 check "the newest '## v...' heading in CHANGELOG.md is VERSION.md" changelog_leads
+check "every page's /assets/ CSS and JS links carry ?v=$VERSION" assets_current
 
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ]
