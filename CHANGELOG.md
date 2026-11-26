@@ -4,6 +4,14 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.26
+
+### Added
+
+- **Fluxer.Now**: free, plain-English guides for moving from Discord to Fluxer, at fluxer-now.stuxie.dev. Built and
+  maintained by StuxieDev for FluxerHost, who own it. Its card shows its live status from status.stuxie.dev
+  (monitor `fluxer-now`), and it's in the README's project table.
+
 ## v26.11.22-1
 
 ### Added
