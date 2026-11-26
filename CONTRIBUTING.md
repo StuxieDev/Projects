@@ -66,6 +66,8 @@ This project uses [Date Versioning](https://datevers.ing). To release:
 
 1. Add a `## vYY.MM.DD` entry at the top of `CHANGELOG.md`, with its sections in this order: Added, Changed, Fixed, Removed, Security, Deprecated.
 2. Set `VERSION.md` to the same bare version (no `v`): today's **UTC** date as `YY.MM.DD`, or `YY.MM.DD-1`, `-2`… for later releases the same UTC day. Never a future date. Use UTC, not local time: just after midnight in the UK it is still the previous day in UTC.
+   Change the `?v=` on every page's `/assets/` stylesheet and script links to the same version, so browsers load the new
+   ones (`tests/version.sh` fails if one is left behind).
 3. Run `bash tests/version.sh`.
 4. Run `./commit.sh` (or `commit.bat` on Windows). It checks the version, commits and tags `vYY.MM.DD`, and never pushes.
 5. `git push origin test --tags`, then open a pull request from `test` into `staging`, and once staging is checked one
