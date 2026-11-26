@@ -4,6 +4,14 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.26-1
+
+### Changed
+
+- **Fluxer.Now's icon switches with the theme**: Fluxer.Now's own light logo (a cream "!") on the dark theme and its
+  dark logo on the light theme, following the system preference or the theme switch (`.project-icon.on-dark` and
+  `.on-light`). They replace the single `fluxer-now.svg`.
+
 ## v26.11.26
 
 ### Added

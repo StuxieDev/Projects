@@ -376,6 +376,15 @@ a { color: inherit; text-decoration: none; }
   object-fit: contain;
   border-radius: 14px;
 }
+/* A light/dark icon pair: .on-dark (a light drawing) shows on the dark theme, .on-light (a dark drawing) on the light
+   theme, following the system preference or the theme switch. */
+.project-icon.on-light { display: none; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) .project-icon.on-dark { display: none; }
+  :root:not([data-theme="dark"]) .project-icon.on-light { display: block; }
+}
+:root[data-theme="light"] .project-icon.on-dark { display: none; }
+:root[data-theme="light"] .project-icon.on-light { display: block; }
 /* For icons drawn on a transparent background (no tile of their own). */
 .project-card h3 { margin: 0; font-size: 1.12rem; font-weight: 600; line-height: 1.3; }
 .project-card .owner { font-size: 0.72rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 2px; }
