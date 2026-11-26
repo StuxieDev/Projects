@@ -22,6 +22,7 @@
 | StuxieDev Website | Version 2 of StuxieDev's home: portfolio, organisations, and links to everything else, fully custom PHP/CSS/JS (the old WordPress site is at [v1.stuxie.dev](https://v1.stuxie.dev)) | [stuxie.dev](https://stuxie.dev) | — |
 | StuxieDev Social | StuxieDev's own Fediverse server (GoToSocial), home of @stuxiedev@stuxie.dev | [social.stuxie.dev](https://social.stuxie.dev) | — (private) |
 | Fluxer Music | The website of Fluxer Music, a community on Fluxer for everyone who makes music, run with Ziad Agamy | [fluxer.music](https://fluxer.music) | — (private) |
+| Fluxer.Now | Plain-English guides for moving from Discord to Fluxer, built and maintained by StuxieDev for FluxerHost | [fluxer-now.stuxie.dev](https://fluxer-now.stuxie.dev) | — (private) |
 | StuxieDev Links | StuxieDev's one-screen links page: a tile for each place to find StuxieDev | [links.stuxie.dev](https://links.stuxie.dev) | — (private) |
 | Get your own Kat | The pixel kat from stuxie.dev that follows your pointer, for any site (like oneko): a script tag, a userscript, a kat picker for the bi kat or the Ridgwell cats, and oneko spritesheets | [kat.stuxie.dev](https://kat.stuxie.dev) | Part of [StuxieDev/Website](https://github.com/StuxieDev/Website) |
 | RoboStux | All-in-one bot: moderation, utilities, fun, and automation | [robo.st](https://robo.st) | [RoboStux](https://github.com/RoboStux) (org) |
