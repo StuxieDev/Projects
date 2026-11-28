@@ -4,6 +4,14 @@ All notable changes to StuxieDev Projects are documented here. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 project adheres to [Date Versioning](https://datevers.ing) since v26.10.23 (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v26.11.28
+
+### Added
+
+- **RoboStux v1, v2 and v3**, the three earlier robo.st websites, as discontinued projects: v1 (2018 to 2020, the
+  "under construction" holding page), v2 (2020 to 2025) and v3 (September 2025 to 2026). Each links to its archived
+  copy (v1.robo.st, v2.robo.st, v3.robo.st) and to the StuxieDev Archives.
+
 ## v26.11.26-4
 
 ### Fixed
